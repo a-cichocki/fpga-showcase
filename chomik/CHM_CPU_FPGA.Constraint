@@ -1,0 +1,69 @@
+;...............................................................................
+;Constraints File
+;   Device  :
+;   Board   :
+;   Project :
+;
+;   Created 10-11-30
+;...............................................................................
+
+;...............................................................................
+Record=FileHeader | Id=DXP Constraints v1.0
+;...............................................................................
+Record=Constraint | TargetKind=PCB | TargetId=CHM_EM
+Record=Constraint | TargetKind=Part | TargetId=A3P1000-1PQ208
+
+Record=Constraint | TargetKind=Port | TargetId=JTAG_NEXUS_TCK | FPGA_PINNUM=P111 | FPGA_CLOCK_PIN=True | FPGA_CLOCK_FREQUENCY=10Mhz
+Record=Constraint | TargetKind=Port | TargetId=JTAG_NEXUS_TDI | FPGA_PINNUM=P114
+Record=Constraint | TargetKind=Port | TargetId=JTAG_NEXUS_TDO | FPGA_PINNUM=P112
+Record=Constraint | TargetKind=Port | TargetId=JTAG_NEXUS_TMS | FPGA_PINNUM=P113
+
+Record=Constraint | TargetKind=Port | TargetId=TX_EN | FPGA_PINNUM=P54
+Record=Constraint | TargetKind=Port | TargetId=RX_EN | FPGA_PINNUM=P55
+Record=Constraint | TargetKind=Port | TargetId=RXD | FPGA_PINNUM=P56
+Record=Constraint | TargetKind=Port | TargetId=TXD | FPGA_PINNUM=P57
+
+Record=Constraint | TargetKind=Port | TargetId=CLK1 | FPGA_PINNUM=P99 |  FPGA_CLOCK_PIN=True | FPGA_CLOCK_FREQUENCY=10Mhz
+
+Record=Constraint | TargetKind=Port | TargetId=CLK1_ENABLE | FPGA_PINNUM=P76
+Record=Constraint | TargetKind=Port | TargetId=CLK1_VALID1 | FPGA_PINNUM=P84
+Record=Constraint | TargetKind=Port | TargetId=CLK1_VALID2 | FPGA_PINNUM=P93
+
+
+Record=Constraint | TargetKind=Port | TargetId=CLK2 | FPGA_PINNUM=P98 | FPGA_CLOCK_PIN=True | FPGA_CLOCK_FREQUENCY=10Mhz
+Record=Constraint | TargetKind=Port | TargetId=CLK2_ENABLE | FPGA_PINNUM=P117
+Record=Constraint | TargetKind=Port | TargetId=CLK2_VALID1 | FPGA_PINNUM=P67
+Record=Constraint | TargetKind=Port | TargetId=CLK2_VALID1 | FPGA_PINNUM=P73
+
+
+Record=Constraint | TargetKind=Port | TargetId=INV1_IN | FPGA_PINNUM=P78
+Record=Constraint | TargetKind=Port | TargetId=INV1_OUT | FPGA_PINNUM=P80
+Record=Constraint | TargetKind=Port | TargetId=INV2_OUT | FPGA_PINNUM=P94
+
+Record=Constraint | TargetKind=Port | TargetId=CLK_OUT | FPGA_PINNUM=P96
+Record=Constraint | TargetKind=Port | TargetId=CLK_IN | FPGA_PINNUM=P26 |  FPGA_CLOCK_PIN=True | FPGA_CLOCK_FREQUENCY=10Mhz
+
+
+Record=Constraint | TargetKind=Port | TargetId=CHECK1 | FPGA_PINNUM=P177
+Record=Constraint | TargetKind=Port | TargetId=CHECK2 | FPGA_PINNUM=P179
+Record=Constraint | TargetKind=Port | TargetId=DEPTH_FULL_CMP | FPGA_PINNUM=P204
+Record=Constraint | TargetKind=Port | TargetId=DEPTH_MID_CMP | FPGA_PINNUM=P172
+Record=Constraint | TargetKind=Port | TargetId=EEPROMA_SCK  | FPGA_PINNUM=P153
+Record=Constraint | TargetKind=Port | TargetId=EEPROMB_SCK  | FPGA_PINNUM=P139
+Record=Constraint | TargetKind=Port | TargetId=EEPROMA_SDA  | FPGA_PINNUM=P144
+Record=Constraint | TargetKind=Port | TargetId=EEPROMB_SDA  | FPGA_PINNUM=P124
+Record=Constraint | TargetKind=Port | TargetId=HEATERON | FPGA_PINNUM=P166
+Record=Constraint | TargetKind=Port | TargetId=MAGNETON  | FPGA_PINNUM=P201
+Record=Constraint | TargetKind=Port | TargetId=MODEHAM   | FPGA_PINNUM=P176
+Record=Constraint | TargetKind=Port | TargetId=POWERHAM   | FPGA_PINNUM=P180
+Record=Constraint | TargetKind=Port | TargetId=PT_EX_CMP  | FPGA_PINNUM=P173
+Record=Constraint | TargetKind=Port | TargetId=PT_EX_OFF | FPGA_PINNUM=P159
+Record=Constraint | TargetKind=Port | TargetId=PULSEHAM  | FPGA_PINNUM=P175 | FPGA_CLOCK_ALLOW_ON_NON_CLOCK_PIN=True
+Record=Constraint | TargetKind=Port | TargetId=REF_PWM   | FPGA_PINNUM=P49
+Record=Constraint | TargetKind=Port | TargetId=TH_CTRL_CMP | FPGA_PINNUM=P60
+Record=Constraint | TargetKind=Port | TargetId=TH_DCDC_CMP | FPGA_PINNUM=P61
+Record=Constraint | TargetKind=Port | TargetId=TH_EX_CMP  | FPGA_PINNUM=P206
+Record=Constraint | TargetKind=Port | TargetId=TH_EX_OFF | FPGA_PINNUM=P158
+Record=Constraint | TargetKind=Port | TargetId=TH_HAM_CMP | FPGA_PINNUM=P129
+Record=Constraint | TargetKind=Port | TargetId=VOLT5_CMP  | FPGA_PINNUM=P146
+;Record=Constraint | TargetKind=Net | TargetId=clk | FPGA_CLOCK_FREQUENCY=10Mhz
