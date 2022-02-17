@@ -1,0 +1,437 @@
+
+*** Running vivado
+    with args -log semicap_semicap_engine_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source semicap_semicap_engine_0_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source semicap_semicap_engine_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/EMICAP/ip_repo/semicap_engine_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Projects/Hipero/svn/FPGA/SEMICAP/Sources/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top semicap_semicap_engine_0_0 -part xcku040-ffva1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-1540] The version limit for your license is '2018.12' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 36324 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 472.273 ; gain = 97.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'semicap_semicap_engine_0_0' [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ip/semicap_semicap_engine_0_0/synth/semicap_semicap_engine_0_0.vhd:133]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'semicap_engine_v1_0' declared at 'g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:5' bound to instance 'U0' of component 'semicap_engine_v1_0' [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ip/semicap_semicap_engine_0_0/synth/semicap_semicap_engine_0_0.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'semicap_engine_v1_0' [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:103]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'semicap_engine_v1_0_S00_AXI' declared at 'g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0_S00_AXI.vhd:5' bound to instance 'semicap_engine_v1_0_S00_AXI_inst' of component 'semicap_engine_v1_0_S00_AXI' [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'semicap_engine_v1_0_S00_AXI' [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0_S00_AXI.vhd:232]
+INFO: [Synth 8-256] done synthesizing module 'semicap_engine_v1_0_S00_AXI' (1#1) [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0_S00_AXI.vhd:86]
+WARNING: [Synth 8-3848] Net hw_icap_avail in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:19]
+WARNING: [Synth 8-3848] Net hw_icap_i in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:22]
+WARNING: [Synth 8-3848] Net hw_cap_gnt in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:24]
+WARNING: [Synth 8-3848] Net hw_cap_rel in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:25]
+WARNING: [Synth 8-3848] Net hw_eos_in in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:27]
+WARNING: [Synth 8-3848] Net sem_icap_prerror in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:29]
+WARNING: [Synth 8-3848] Net sem_icap_prdone in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:30]
+WARNING: [Synth 8-3848] Net sem_icap_avail in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:31]
+WARNING: [Synth 8-3848] Net sem_icap_o in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:33]
+WARNING: [Synth 8-3848] Net sem_cap_gnt in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:36]
+WARNING: [Synth 8-3848] Net sem_cap_rel in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:37]
+WARNING: [Synth 8-3848] Net sem_monitor_txfull in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:39]
+WARNING: [Synth 8-3848] Net sem_monitor_rxdata in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:40]
+WARNING: [Synth 8-3848] Net sem_monitor_rxempty in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:41]
+WARNING: [Synth 8-3848] Net sem_command_strobe in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:45]
+WARNING: [Synth 8-3848] Net sem_command_code in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:46]
+WARNING: [Synth 8-3848] Net icap_csib in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:64]
+WARNING: [Synth 8-3848] Net icap_rdwrb in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:65]
+WARNING: [Synth 8-3848] Net icap_i in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:66]
+WARNING: [Synth 8-3848] Net extirq in module/entity semicap_engine_v1_0 does not have driver. [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'semicap_engine_v1_0' (2#1) [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ipshared/dc46/hdl/semicap_engine_v1_0.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'semicap_semicap_engine_0_0' (3#1) [g:/EMICAP/semicap/semicap.srcs/sources_1/bd/semicap/ip/semicap_semicap_engine_0_0/synth/semicap_semicap_engine_0_0.vhd:133]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port hw_icap_avail
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port hw_icap_i
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port hw_cap_gnt
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port hw_cap_rel
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port hw_eos_in
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_prerror
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_prdone
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_avail
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[31]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[30]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[29]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[28]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[27]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[26]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[25]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[24]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[23]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[22]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[21]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[20]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[19]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[18]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[17]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[16]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[15]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[14]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[13]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[12]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[11]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[10]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[9]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[8]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[7]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[6]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[5]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[4]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[3]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[2]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[1]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_icap_o[0]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_cap_gnt
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_cap_rel
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_monitor_txfull
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_monitor_rxdata[7]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_monitor_rxdata[6]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_monitor_rxdata[5]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_monitor_rxdata[4]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_monitor_rxdata[3]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_monitor_rxdata[2]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_monitor_rxdata[1]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_monitor_rxdata[0]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_monitor_rxempty
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_strobe
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[39]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[38]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[37]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[36]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[35]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[34]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[33]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[32]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[31]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[30]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[29]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[28]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[27]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[26]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[25]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[24]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[23]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[22]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[21]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[20]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[19]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[18]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[17]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[16]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[15]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[14]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[13]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[12]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[11]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[10]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[9]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[8]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[7]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[6]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[5]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[4]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[3]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[2]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[1]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port sem_command_code[0]
+WARNING: [Synth 8-3331] design semicap_engine_v1_0 has unconnected port icap_csib
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 528.242 ; gain = 153.746
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 528.242 ; gain = 153.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 528.242 ; gain = 153.746
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1050.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1050.176 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1053.691 ; gain = 3.516
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1053.691 ; gain = 679.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1053.691 ; gain = 679.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1053.691 ; gain = 679.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1053.691 ; gain = 679.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 10    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	  10 Input     32 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module semicap_engine_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 10    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	  10 Input     32 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3917] design semicap_semicap_engine_0_0 has port sem_aux_error_cr_ne driven by constant 0
+INFO: [Synth 8-3917] design semicap_semicap_engine_0_0 has port sem_aux_error_cr_es driven by constant 0
+INFO: [Synth 8-3917] design semicap_semicap_engine_0_0 has port sem_aux_error_uc driven by constant 0
+INFO: [Synth 8-3886] merging instance 'U0/semicap_engine_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/semicap_engine_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/semicap_engine_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/semicap_engine_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/semicap_engine_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/semicap_engine_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1053.691 ; gain = 679.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1248.207 ; gain = 873.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1248.578 ; gain = 874.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1259.746 ; gain = 885.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1259.746 ; gain = 885.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1259.746 ; gain = 885.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1259.746 ; gain = 885.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1259.746 ; gain = 885.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1259.746 ; gain = 885.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1259.746 ; gain = 885.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |     2|
+|4     |LUT4 |     4|
+|5     |LUT6 |   134|
+|6     |FDRE |   329|
+|7     |FDSE |     5|
++------+-----+------+
+
+Report Instance Areas: 
++------+-------------------------------------+----------------------------+------+
+|      |Instance                             |Module                      |Cells |
++------+-------------------------------------+----------------------------+------+
+|1     |top                                  |                            |   476|
+|2     |  U0                                 |semicap_engine_v1_0         |   476|
+|3     |    semicap_engine_v1_0_S00_AXI_inst |semicap_engine_v1_0_S00_AXI |   476|
++------+-------------------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1259.746 ; gain = 885.250
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 262 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1259.746 ; gain = 359.801
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1259.746 ; gain = 885.250
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1290.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 1290.918 ; gain = 916.422
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1290.918 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'G:/EMICAP/semicap/semicap.runs/semicap_semicap_engine_0_0_synth_1/semicap_semicap_engine_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP semicap_semicap_engine_0_0, cache-ID = bf6f88b3fea062b6
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1290.918 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'G:/EMICAP/semicap/semicap.runs/semicap_semicap_engine_0_0_synth_1/semicap_semicap_engine_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file semicap_semicap_engine_0_0_utilization_synth.rpt -pb semicap_semicap_engine_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 11:18:45 2019...

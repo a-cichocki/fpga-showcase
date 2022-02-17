@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1564400765">
+  <File Type="PA-TCL" Name="semicap_engine.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="semicap_engine_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="semicap_engine_reports.tcl"/>
+  <File Type="RDS-RDS" Name="semicap_engine.vds"/>
+  <File Type="RDS-UTIL" Name="semicap_engine_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="semicap_engine_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="semicap_engine.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="semicap_engine_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="semicap_engine_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/icapArbiter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/srcs/minority_voter_status_latch.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/acichocki/Desktop/srcs/minority_voter_status_latch.vhd"/>
+        <Attr Name="ImportTime" Val="1564135606"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/srcs/sem_state_decoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/acichocki/Desktop/srcs/sem_state_decoder.vhd"/>
+        <Attr Name="ImportTime" Val="1564135610"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/semicap_fsm.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/semicap_engine.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="semicap_engine"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_mon_cmd"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_mon_stat"/>
+</GenRun>

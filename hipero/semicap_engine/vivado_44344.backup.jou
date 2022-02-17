@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Sat Jul 27 08:13:08 2019
+# Process ID: 44344
+# Current directory: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent43528 D:\Projects\Hipero\svn\dev\fpga\ip_projects\semicap_engine\semicap_engine.xpr
+# Log file: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/vivado.log
+# Journal file: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+ipx::open_ipxact_file {D:\Projects\Hipero\svn\dev\fpga\ip_projects\semicap_engine\component.xml}
+ipx::merge_project_changes ports [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::unload_core d:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/component.xml
+ipx::open_ipxact_file D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/component.xml
+ipx::merge_project_changes ports [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\Projects\Hipero\svn\dev\fpga\ip_projects\semicap_engine\cbkpan_hipero_semicap_engine_1.0.zip} [ipx::current_core]

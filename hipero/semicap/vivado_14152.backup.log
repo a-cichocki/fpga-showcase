@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Tue Jul 30 15:50:46 2019
+# Process ID: 14152
+# Current directory: F:/Projekty/HIPERO/dev/fpga/ip_projects/semicap
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20132 F:\Projekty\HIPERO\dev\fpga\ip_projects\semicap\semicap.xpr
+# Log file: F:/Projekty/HIPERO/dev/fpga/ip_projects/semicap/vivado.log
+# Journal file: F:/Projekty/HIPERO/dev/fpga/ip_projects/semicap\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Projekty/HIPERO/dev/fpga/ip_projects/semicap/semicap.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap' since last save.
+WARNING: [Project 1-312] File not found as 'F:/../projects/hipero/svn/dev/fpga/ip_projects/semicap/component.xml'; using path 'D:/projects/hipero/svn/dev/fpga/ip_projects/semicap/component.xml' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'F:/../projects/hipero/svn/dev/fpga/ip_projects/semicap/component.xml'; using path 'D:/projects/hipero/svn/dev/fpga/ip_projects/semicap/component.xml' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Projekty/HIPERO/dev/fpga/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'semicap_semicap_spihelper_0_0' generated file not found 'f:/Projekty/HIPERO/dev/fpga/ip_projects/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_spihelper/semicap_spihelper.srcs/sources_1/imports/imports/sem_ultra_0_spi_byte.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'semicap_semicap_spihelper_0_0' generated file not found 'f:/Projekty/HIPERO/dev/fpga/ip_projects/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_spihelper/semicap_spihelper.srcs/sources_1/imports/imports/sem_ultra_0_spi.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'semicap_semicap_spihelper_0_0' generated file not found 'f:/Projekty/HIPERO/dev/fpga/ip_projects/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_spihelper/semicap_spihelper.srcs/sources_1/imports/imports/sem_ultra_0_spi_byte.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'semicap_semicap_spihelper_0_0' generated file not found 'f:/Projekty/HIPERO/dev/fpga/ip_projects/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_spihelper/semicap_spihelper.srcs/sources_1/imports/imports/sem_ultra_0_spi.v'. Please regenerate to continue.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'semicap.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+semicap_semicap_spihelper_0_0
+
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 827.211 ; gain = 151.805
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 30 15:51:30 2019...

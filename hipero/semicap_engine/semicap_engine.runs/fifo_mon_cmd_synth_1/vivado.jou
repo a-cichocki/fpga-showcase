@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Sat Jul 27 08:14:13 2019
+# Process ID: 51036
+# Current directory: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.runs/fifo_mon_cmd_synth_1
+# Command line: vivado.exe -log fifo_mon_cmd.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_mon_cmd.tcl
+# Log file: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.runs/fifo_mon_cmd_synth_1/fifo_mon_cmd.vds
+# Journal file: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.runs/fifo_mon_cmd_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_mon_cmd.tcl -notrace

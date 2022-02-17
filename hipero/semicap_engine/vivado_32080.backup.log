@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 10 00:11:20 2019
+# Process ID: 32080
+# Current directory: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent49888 D:\Projects\Hipero\svn\dev\fpga\ip_projects\semicap_engine\semicap_engine.xpr
+# Log file: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/vivado.log
+# Journal file: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 814.109 ; gain = 187.949
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {D:\projects\hipero\svn\dev\fpga\ip_repo\semicap_engine\component.xml}
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::unload_core d:/projects/hipero/svn/dev/fpga/ip_repo/semicap_engine/component.xml
+ipx::package_project -root_dir d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine -vendor cbkpan -library hipero -taxonomy /UserIP -generated_files -import_files -set_current false -force
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'icap_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's00_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axi_aresetn'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'icap_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::unload_core d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 890.516 ; gain = 14.313
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+CRITICAL WARNING: [IP_Flow 19-3667] Component file 'd:/projects/hipero/svn/dev/fpga/ipshared/dc46/hdl/semicap_engine_v1_0_S00_AXI.vhd' does not exist. The file is ignored.
+CRITICAL WARNING: [IP_Flow 19-3667] Component file 'd:/projects/hipero/svn/dev/fpga/ipshared/dc46/hdl/semicap_engine_v1_0.vhd' does not exist. The file is ignored.
+CRITICAL WARNING: [IP_Flow 19-3667] Component file 'd:/projects/hipero/svn/dev/fpga/ipshared/dc46/hdl/semicap_engine_v1_0_S00_AXI.vhd' does not exist. The file is ignored.
+CRITICAL WARNING: [IP_Flow 19-3667] Component file 'd:/projects/hipero/svn/dev/fpga/ipshared/dc46/hdl/semicap_engine_v1_0.vhd' does not exist. The file is ignored.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 890.516 ; gain = 14.313
+update_compile_order -fileset sources_1
+close_project
+ipx::open_ipxact_file {d:\projects\hipero\svn\dev\fpga\ip_projects\semicap_engine\component.xml}
+ipx::remove_file ../../ipshared/dc46/hdl/semicap_engine_v1_0_S00_AXI.vhd [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]
+ipx::remove_file ../../ipshared/dc46/hdl/semicap_engine_v1_0.vhd [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]
+ipx::remove_file_group xilinx_vhdlsynthesiswrapper [ipx::current_core]
+ipx::remove_file_group xilinx_vhdlsynthesis [ipx::current_core]
+ipx::remove_file_group xilinx_vhdlbehavioralsimulation [ipx::current_core]
+ipx::remove_file_group xilinx_vhdlsimulationwrapper [ipx::current_core]
+ipx::remove_file_group xilinx_externalfiles [ipx::current_core]
+ipx::add_file_group -type synthesis {} [ipx::current_core]
+ipx::add_file D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs/semicap_engine.vhd [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]
+set_property type vhdlSource [ipx::get_files D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs/semicap_engine.vhd -of_objects [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]]
+set_property library_name hipero [ipx::get_files D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs/semicap_engine.vhd -of_objects [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]]
+ipx::add_file D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs/semicap_engine_S00_AXI.vhd [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]
+set_property type vhdlSource [ipx::get_files D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs/semicap_engine_S00_AXI.vhd -of_objects [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]]
+set_property library_name hipero [ipx::get_files D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs/semicap_engine_S00_AXI.vhd -of_objects [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::unload_core d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/component.xml
+ipx::open_ipxact_file {d:\projects\hipero\svn\dev\fpga\ip_projects\semicap_engine\component.xml}
+ipx::remove_file_group xilinx_vhdlsynthesiswrapper [ipx::current_core]
+ipx::remove_file_group xilinx_vhdlsimulationwrapper [ipx::current_core]
+ipx::remove_file_group xilinx_externalfiles [ipx::current_core]
+ipx::remove_file ../../ipshared/dc46/hdl/semicap_engine_v1_0_S00_AXI.vhd [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]
+ipx::remove_file ../../ipshared/dc46/hdl/semicap_engine_v1_0.vhd [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]
+ipx::remove_file ../../ipshared/dc46/hdl/semicap_engine_v1_0.vhd [ipx::get_file_groups xilinx_vhdlbehavioralsimulation -of_objects [ipx::current_core]]
+ipx::remove_file ../../ipshared/dc46/hdl/semicap_engine_v1_0_S00_AXI.vhd [ipx::get_file_groups xilinx_vhdlbehavioralsimulation -of_objects [ipx::current_core]]
+ipx::add_file D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs/semicap_engine.vhd [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]
+set_property type vhdlSource [ipx::get_files D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs/semicap_engine.vhd -of_objects [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]]
+set_property library_name hipero [ipx::get_files D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs/semicap_engine.vhd -of_objects [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]]
+ipx::add_file D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs/semicap_engine_S00_AXI.vhd [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]
+set_property type vhdlSource [ipx::get_files D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs/semicap_engine_S00_AXI.vhd -of_objects [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]]
+set_property library_name hipero [ipx::get_files D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs/semicap_engine_S00_AXI.vhd -of_objects [ipx::get_file_groups xilinx_vhdlsynthesis -of_objects [ipx::current_core]]]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::unload_core d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/component.xml
+ipx::open_ipxact_file {d:\projects\hipero\svn\dev\fpga\ip_projects\semicap_engine\component.xml}
+ipx::unload_core d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/component.xml
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 10 00:22:24 2019...

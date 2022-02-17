@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Fri Jul 26 09:58:17 2019
+# Process ID: 46796
+# Current directory: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_axi
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent49988 D:\Projects\Hipero\svn\dev\fpga\ip_projects\semicap_axi\edit_semicap_axi_v1_0.xpr
+# Log file: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_axi/vivado.log
+# Journal file: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_axi\vivado.jou
+#-----------------------------------------------------------
+start_gui

@@ -1,0 +1,127 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"/hipero_sem|/axi_hwicap|",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port AXI_ENG -pg 1 -lvl 0 -x -10 -y 870 -defaultsOSRD
+preplace port AXI_HW -pg 1 -lvl 0 -x -10 -y 1740 -defaultsOSRD
+preplace port spi_q_0 -pg 1 -lvl 0 -x -10 -y 310 -defaultsOSRD
+preplace port spi_c_0 -pg 1 -lvl 6 -x 3360 -y 660 -defaultsOSRD
+preplace port spi_d_0 -pg 1 -lvl 6 -x 3360 -y 680 -defaultsOSRD
+preplace port spi_s_n_0 -pg 1 -lvl 6 -x 3360 -y 700 -defaultsOSRD
+preplace port IRq -pg 1 -lvl 6 -x 3360 -y 1560 -defaultsOSRD
+preplace port clk_axi -pg 1 -lvl 0 -x -10 -y 670 -defaultsOSRD
+preplace port areset_n -pg 1 -lvl 0 -x -10 -y 1170 -defaultsOSRD
+preplace portBus oRpReset_n_0 -pg 1 -lvl 6 -x 3360 -y 1580 -defaultsOSRD
+preplace portBus iRpMinVoter_0 -pg 1 -lvl 0 -x -10 -y 1650 -defaultsOSRD
+preplace inst hipero_icap_0 -pg 1 -lvl 5 -x 3070 -y 1380 -defaultsOSRD
+preplace inst axi_hwicap -pg 1 -lvl 3 -x 1850 -y 1780 -defaultsOSRD
+preplace inst hipero_sem -pg 1 -lvl 3 -x 1850 -y 1140 -defaultsOSRD
+preplace inst semicap_axi_0 -pg 1 -lvl 1 -x 350 -y 1020 -defaultsOSRD
+preplace inst icapmux_0 -pg 1 -lvl 4 -x 2540 -y 1760 -defaultsOSRD
+preplace inst semicap_engine_0 -pg 1 -lvl 2 -x 1030 -y 1830 -defaultsOSRD
+preplace inst semicap_spihelper_0 -pg 1 -lvl 3 -x 1850 -y 710 -defaultsOSRD
+preplace netloc hipero_sem_fecc_farsel 1 3 2 N 1380 2740
+preplace netloc hipero_icap_0_fecc_eccerrornotsingle 1 2 4 1600 1490 2280 1500 2790 1590 3280
+preplace netloc hipero_icap_0_fecc_eccerrorsingle 1 2 4 1610 1500 2200 1460 2840 1600 3270
+preplace netloc hipero_icap_0_fecc_endofframe 1 2 4 1640 1450 2200 1430 2870 1610 3260
+preplace netloc hipero_icap_0_fecc_endofscan 1 2 4 1620 1510 2210 1470 2800 1620 3250
+preplace netloc hipero_icap_0_fecc_far 1 2 4 1630 1530 2220 1510 2770 1640 3240
+preplace netloc hipero_icap_0_fecc_crcerror 1 2 4 1650 1440 N 1440 2900 1530 3220
+preplace netloc spi_q_0_1 1 0 3 NJ 310 NJ 310 1620J
+preplace netloc hipero_sem_fetch_txdata 1 2 2 1640 590 2100
+preplace netloc hipero_sem_fetch_txwrite 1 2 2 1650 600 2090
+preplace netloc hipero_sem_fetch_rxread 1 2 2 1630 580 2120
+preplace netloc semicap_spihelper_0_fetch_rxempty 1 2 2 1640 830 2020
+preplace netloc semicap_spihelper_0_spi_c 1 3 3 NJ 660 NJ 660 NJ
+preplace netloc semicap_spihelper_0_spi_d 1 3 3 NJ 680 NJ 680 NJ
+preplace netloc semicap_spihelper_0_spi_s_n 1 3 3 NJ 700 NJ 700 NJ
+preplace netloc semicap_axi_0_oConfigRegIrqMask 1 1 1 620 1040n
+preplace netloc semicap_axi_0_oConfigRegSemEn 1 1 1 600 1060n
+preplace netloc semicap_axi_0_oMinVoterRegClearStrobe 1 1 1 640 940n
+preplace netloc semicap_axi_0_oMonitorRegByte 1 1 1 580 1080n
+preplace netloc semicap_axi_0_oMonitorRegGetByte 1 1 1 630 960n
+preplace netloc semicap_axi_0_oMonitorRegPutByte 1 1 1 610 980n
+preplace netloc semicap_axi_0_oMonitorRegWriteStrobe 1 1 1 590 1000n
+preplace netloc semicap_axi_0_oResetsReg 1 1 1 570 1020n
+preplace netloc semicap_axi_0_oTblAddReg 1 1 1 560 1100n
+preplace netloc semicap_engine_0_oConfigRegIrqMask 1 0 3 140 1240 NJ 1240 1230
+preplace netloc semicap_engine_0_oConfigRegSemEn 1 0 3 150 1230 NJ 1230 1360
+preplace netloc semicap_engine_0_oTblAddReg 1 0 3 120 1370 NJ 1370 1240
+preplace netloc semicap_engine_0_oMonitorRegByte 1 0 3 130 1320 NJ 1320 1310
+preplace netloc semicap_engine_0_oStatusRegState 1 0 3 80 1360 NJ 1360 1250
+preplace netloc semicap_engine_0_oStatusRegMonEmpty 1 0 3 70 1350 NJ 1350 1260
+preplace netloc semicap_engine_0_oStatusRegFifoStatFull 1 0 3 60 1340 NJ 1340 1270
+preplace netloc semicap_engine_0_oStatusRegFifoCmdFull 1 0 3 50 1330 NJ 1330 1280
+preplace netloc semicap_engine_0_oMinVoterRegCmpStat 1 0 3 110 1270 NJ 1270 1340
+preplace netloc semicap_engine_0_oMinVoterRegTmrStat 1 0 3 30 1310 NJ 1310 1320
+preplace netloc semicap_engine_0_oDevInfoId 1 0 3 90 1250 NJ 1250 1330
+preplace netloc semicap_engine_0_oDevInfoVersionMajor 1 0 3 40 1300 NJ 1300 1220
+preplace netloc semicap_engine_0_oDevInfoVersionMinor 1 0 3 100 1260 NJ 1260 1350
+preplace netloc semicap_engine_0_oIRq 1 2 4 1450J 1620 2310J 1590 2760J 1630 3320J
+preplace netloc hipero_icap_0_icap_avail 1 3 3 2340 1450 2890J 1540 3290
+preplace netloc hipero_icap_0_icap_o 1 3 3 2350 1480 2880J 1550 3230
+preplace netloc hipero_icap_0_icap_prdone 1 3 3 2360 1540 2810J 1560 3310
+preplace netloc hipero_icap_0_icap_prerror 1 3 3 2330 1490 2830J 1570 3300
+preplace netloc icapmux_0_oIcapCsib 1 4 1 2820 1360n
+preplace netloc icapmux_0_oIcapRdWrb 1 4 1 2850 1380n
+preplace netloc icapmux_0_oIcapI 1 4 1 2860 1400n
+preplace netloc icapmux_0_oHwIcapAvail 1 3 2 2300 1560 2700
+preplace netloc axi_hwicap_icap_csib 1 3 1 2280 1720n
+preplace netloc axi_hwicap_icap_o 1 3 1 2250 1740n
+preplace netloc icapmux_0_oHwIcapI 1 3 2 2240 1530 2740
+preplace netloc axi_hwicap_icap_rdwrb 1 3 1 N 1780
+preplace netloc semicap_engine_0_oHwIcapEos 1 2 1 1400 1640n
+preplace netloc semicap_engine_0_oHwIcapGrant 1 2 2 1390 1950 2020
+preplace netloc semicap_engine_0_oHwIcapRelinquish 1 2 2 1350 2000 2050
+preplace netloc axi_hwicap_cap_req 1 1 3 790 2180 NJ 2180 2040
+preplace netloc axi_hwicap_ip2intc_irpt 1 1 3 700 2190 NJ 2190 2030
+preplace netloc hipero_sem_icap_csib 1 3 1 2290 1320n
+preplace netloc hipero_sem_icap_rdwrb 1 3 1 2230 1340n
+preplace netloc icapmux_0_oSemIcapAvail 1 2 3 1580 1570 NJ 1570 2720
+preplace netloc icapmux_0_oSemIcapI 1 2 3 1560 1580 NJ 1580 2710
+preplace netloc icapmux_0_oSemIcapPrDone 1 2 3 1590 1520 NJ 1520 2750
+preplace netloc icapmux_0_oSemIcapPrError 1 2 3 1570 1600 NJ 1600 2730
+preplace netloc hipero_sem_icap_i 1 3 1 2260 1360n
+preplace netloc semicap_engine_0_oMuxSemSelect 1 2 2 1380 1960 2360J
+preplace netloc semicap_engine_0_oSemAuxErrorCrEs 1 2 1 1420 1340n
+preplace netloc semicap_engine_0_oSemAuxErrorCrNe 1 2 1 1410 1320n
+preplace netloc semicap_engine_0_oSemAuxErrorUc 1 2 1 1470 1360n
+preplace netloc semicap_engine_0_oRpReset_n 1 2 4 1360J 1970 2320J 1550 2780J 1580 NJ
+preplace netloc semicap_engine_0_oSemFetchTblAddr 1 2 1 1370 980n
+preplace netloc semicap_engine_0_oSemCmdCode 1 2 1 1440 1080n
+preplace netloc semicap_engine_0_oSemCmdStrobe 1 2 1 1430 1060n
+preplace netloc semicap_engine_0_oSemCapGrant 1 2 2 1320 1980 2170
+preplace netloc semicap_engine_0_oSemCapRelinquish 1 2 2 1310 1990 2160
+preplace netloc hipero_sem_cap_req 1 1 3 800 1460 NJ 1460 2060
+preplace netloc hipero_sem_status_heartbeat 1 1 3 780 1450 1480J 1590 2110
+preplace netloc hipero_sem_status_initialization 1 1 3 690 1440 1540J 1540 2070
+preplace netloc hipero_sem_status_observation 1 1 3 680 1430 1500J 1560 2080
+preplace netloc hipero_sem_status_correction 1 1 3 740 2230 NJ 2230 2190
+preplace netloc hipero_sem_status_classification 1 1 3 730 2220 NJ 2220 2150
+preplace netloc hipero_sem_status_injection 1 1 3 670 1420 1550J 1550 2040
+preplace netloc hipero_sem_status_essential 1 1 3 770 2260 NJ 2260 2180
+preplace netloc hipero_sem_status_uncorrectable 1 1 3 660 1410 1510J 1610 2050
+preplace netloc hipero_sem_status_diagnostic_scan 1 1 3 760 2250 NJ 2250 2140
+preplace netloc hipero_sem_status_detect_only 1 1 3 750 2240 NJ 2240 2130
+preplace netloc semicap_engine_0_oSemMonTxFull 1 2 1 1460 1000n
+preplace netloc semicap_engine_0_oSemMonRxData 1 2 1 1290 1020n
+preplace netloc semicap_engine_0_oSemMonRxEmpty 1 2 1 1300 1040n
+preplace netloc hipero_sem_monitor_txdata 1 1 3 710 2200 NJ 2200 2100
+preplace netloc hipero_sem_monitor_txwrite 1 1 3 720 2210 NJ 2210 2090
+preplace netloc hipero_sem_monitor_rxread 1 1 3 820 1480 NJ 1480 2030
+preplace netloc hipero_sem_command_busy 1 1 3 810 1470 NJ 1470 2020
+preplace netloc iRpMinVoter_0_1 1 0 2 NJ 1650 540J
+preplace netloc semicap_spihelper_0_fetch_rxdata 1 2 2 1630 820 2030
+preplace netloc semicap_spihelper_0_fetch_txfull 1 2 2 1650 840 2040
+preplace netloc clk_100MHz_1 1 0 5 10J 1290 650J 1290 1530J 1940 2270 1340 N
+preplace netloc s00_axi_aresetn_0_1 1 0 3 20 1380 550 1390 1490
+preplace netloc S_AXI_LITE_0_1 1 0 3 80J 1400 NJ 1400 1520J
+preplace netloc S00_AXI_0_1 1 0 1 N 870
+levelinfo -pg 1 -10 350 1030 1850 2540 3070 3360
+pagesize -pg 1 -db -bbox -sgen -190 -630 3540 2610
+"
+}
+{
+   "da_clkrst_cnt":"9"
+}

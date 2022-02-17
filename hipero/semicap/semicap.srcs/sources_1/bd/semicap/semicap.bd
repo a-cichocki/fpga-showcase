@@ -1,0 +1,1072 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD78D47771F63A5A7",
+      "device": "xcku040-ffva1156-2-e",
+      "name": "semicap",
+      "synth_flow_mode": "Singular",
+      "tool_version": "2019.1.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "hipero_icap_0": "",
+      "axi_hwicap": "",
+      "hipero_sem": "",
+      "semicap_axi_0": "",
+      "icapmux_0": "",
+      "semicap_engine_0": "",
+      "semicap_spihelper_0": ""
+    },
+    "interface_ports": {
+      "AXI_ENG": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "12"
+          },
+          "ARUSER_WIDTH": {
+            "value": "0"
+          },
+          "AWUSER_WIDTH": {
+            "value": "0"
+          },
+          "BUSER_WIDTH": {
+            "value": "0"
+          },
+          "CLK_DOMAIN": {
+            "value": "semicap_clk_axi",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_BRESP": {
+            "value": "1"
+          },
+          "HAS_BURST": {
+            "value": "0"
+          },
+          "HAS_CACHE": {
+            "value": "0"
+          },
+          "HAS_LOCK": {
+            "value": "0"
+          },
+          "HAS_PROT": {
+            "value": "1"
+          },
+          "HAS_QOS": {
+            "value": "0"
+          },
+          "HAS_REGION": {
+            "value": "0"
+          },
+          "HAS_RRESP": {
+            "value": "1"
+          },
+          "HAS_WSTRB": {
+            "value": "1"
+          },
+          "ID_WIDTH": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "MAX_BURST_LENGTH": {
+            "value": "1"
+          },
+          "NUM_READ_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_READ_THREADS": {
+            "value": "1"
+          },
+          "NUM_WRITE_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_WRITE_THREADS": {
+            "value": "1"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE"
+          },
+          "RUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "RUSER_WIDTH": {
+            "value": "0"
+          },
+          "SUPPORTS_NARROW_BURST": {
+            "value": "0"
+          },
+          "WUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "WUSER_WIDTH": {
+            "value": "0"
+          }
+        }
+      },
+      "AXI_HW": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "12"
+          },
+          "ARUSER_WIDTH": {
+            "value": "0"
+          },
+          "AWUSER_WIDTH": {
+            "value": "0"
+          },
+          "BUSER_WIDTH": {
+            "value": "0"
+          },
+          "CLK_DOMAIN": {
+            "value": "semicap_clk_axi",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_BRESP": {
+            "value": "1"
+          },
+          "HAS_BURST": {
+            "value": "0"
+          },
+          "HAS_CACHE": {
+            "value": "0"
+          },
+          "HAS_LOCK": {
+            "value": "0"
+          },
+          "HAS_PROT": {
+            "value": "0"
+          },
+          "HAS_QOS": {
+            "value": "0"
+          },
+          "HAS_REGION": {
+            "value": "0"
+          },
+          "HAS_RRESP": {
+            "value": "1"
+          },
+          "HAS_WSTRB": {
+            "value": "1"
+          },
+          "ID_WIDTH": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "MAX_BURST_LENGTH": {
+            "value": "1"
+          },
+          "NUM_READ_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_READ_THREADS": {
+            "value": "1"
+          },
+          "NUM_WRITE_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_WRITE_THREADS": {
+            "value": "1"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE"
+          },
+          "RUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "RUSER_WIDTH": {
+            "value": "0"
+          },
+          "SUPPORTS_NARROW_BURST": {
+            "value": "0"
+          },
+          "WUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "WUSER_WIDTH": {
+            "value": "0"
+          }
+        }
+      }
+    },
+    "ports": {
+      "spi_q_0": {
+        "direction": "I"
+      },
+      "spi_c_0": {
+        "direction": "O"
+      },
+      "spi_d_0": {
+        "direction": "O"
+      },
+      "spi_s_n_0": {
+        "direction": "O"
+      },
+      "IRq": {
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "oRpReset_n_0": {
+        "direction": "O",
+        "left": "2",
+        "right": "0",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default_prop"
+          }
+        }
+      },
+      "iRpMinVoter_0": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "clk_axi": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "AXI_ENG:AXI_HW"
+          },
+          "ASSOCIATED_RESET": {
+            "value": "areset_n"
+          },
+          "CLK_DOMAIN": {
+            "value": "semicap_clk_axi",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "areset_n": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "hipero_icap_0": {
+        "vlnv": "cbkpan:hipero:hipero_icap:2.0",
+        "xci_name": "semicap_hipero_icap_0_0"
+      },
+      "axi_hwicap": {
+        "vlnv": "xilinx.com:ip:axi_hwicap:3.0",
+        "xci_name": "semicap_axi_hwicap_0",
+        "parameters": {
+          "C_ICAP_EXTERNAL": {
+            "value": "1"
+          },
+          "C_MODE": {
+            "value": "0"
+          },
+          "C_OPERATION": {
+            "value": "1"
+          },
+          "C_READ_FIFO_DEPTH": {
+            "value": "256"
+          },
+          "C_WRITE_FIFO_DEPTH": {
+            "value": "1024"
+          }
+        }
+      },
+      "hipero_sem": {
+        "vlnv": "xilinx.com:ip:sem_ultra:3.1",
+        "xci_name": "semicap_hipero_sem_0",
+        "parameters": {
+          "ENABLE_CLASSIFICATION": {
+            "value": "true"
+          },
+          "LOCATE_CONFIG_PRIM": {
+            "value": "example_design"
+          },
+          "MODE": {
+            "value": "mitigation_and_testing"
+          }
+        }
+      },
+      "semicap_axi_0": {
+        "vlnv": "cbkpan:hipero:semicap_axi:1.0",
+        "xci_name": "semicap_semicap_axi_0_0"
+      },
+      "icapmux_0": {
+        "vlnv": "xilinx.com:module_ref:icapmux:1.0",
+        "xci_name": "semicap_icapmux_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "icapmux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "oIcapCsib": {
+            "direction": "O"
+          },
+          "oIcapI": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "oIcapRdWrb": {
+            "direction": "O"
+          },
+          "iIcapAvail": {
+            "direction": "I"
+          },
+          "iIcapO": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "iIcapPrDone": {
+            "direction": "I"
+          },
+          "iIcapPrError": {
+            "direction": "I"
+          },
+          "oHwIcapAvail": {
+            "direction": "O"
+          },
+          "oHwIcapI": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "iHwIcapCsib": {
+            "direction": "I"
+          },
+          "iHwIcapO": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "iHwIcapWr_n": {
+            "direction": "I"
+          },
+          "oSemIcapAvail": {
+            "direction": "O"
+          },
+          "oSemIcapI": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "oSemIcapPrDone": {
+            "direction": "O"
+          },
+          "oSemIcapPrError": {
+            "direction": "O"
+          },
+          "iSemIcapCsib": {
+            "direction": "I"
+          },
+          "iSemIcapWr_n": {
+            "direction": "I"
+          },
+          "iSemIcapO": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "iEngSemSelect": {
+            "direction": "I"
+          }
+        }
+      },
+      "semicap_engine_0": {
+        "vlnv": "cbkpan:hipero:semicap_engine:1.0",
+        "xci_name": "semicap_semicap_engine_0_0"
+      },
+      "semicap_spihelper_0": {
+        "vlnv": "cbkpan:hipero:semicap_spihelper:1.0",
+        "xci_name": "semicap_semicap_spihelper_0_0"
+      }
+    },
+    "interface_nets": {
+      "S00_AXI_0_1": {
+        "interface_ports": [
+          "AXI_ENG",
+          "semicap_axi_0/S00_AXI"
+        ]
+      },
+      "S_AXI_LITE_0_1": {
+        "interface_ports": [
+          "AXI_HW",
+          "axi_hwicap/S_AXI_LITE"
+        ]
+      }
+    },
+    "nets": {
+      "hipero_sem_fecc_farsel": {
+        "ports": [
+          "hipero_sem/fecc_farsel",
+          "hipero_icap_0/fecc_farsel"
+        ]
+      },
+      "hipero_icap_0_fecc_eccerrornotsingle": {
+        "ports": [
+          "hipero_icap_0/fecc_eccerrornotsingle",
+          "hipero_sem/fecc_eccerrornotsingle"
+        ]
+      },
+      "hipero_icap_0_fecc_eccerrorsingle": {
+        "ports": [
+          "hipero_icap_0/fecc_eccerrorsingle",
+          "hipero_sem/fecc_eccerrorsingle"
+        ]
+      },
+      "hipero_icap_0_fecc_endofframe": {
+        "ports": [
+          "hipero_icap_0/fecc_endofframe",
+          "hipero_sem/fecc_endofframe"
+        ]
+      },
+      "hipero_icap_0_fecc_endofscan": {
+        "ports": [
+          "hipero_icap_0/fecc_endofscan",
+          "hipero_sem/fecc_endofscan"
+        ]
+      },
+      "hipero_icap_0_fecc_far": {
+        "ports": [
+          "hipero_icap_0/fecc_far",
+          "hipero_sem/fecc_far"
+        ]
+      },
+      "hipero_icap_0_fecc_crcerror": {
+        "ports": [
+          "hipero_icap_0/fecc_crcerror",
+          "hipero_sem/fecc_crcerror"
+        ]
+      },
+      "spi_q_0_1": {
+        "ports": [
+          "spi_q_0",
+          "semicap_spihelper_0/spi_q"
+        ]
+      },
+      "hipero_sem_fetch_txdata": {
+        "ports": [
+          "hipero_sem/fetch_txdata",
+          "semicap_spihelper_0/fetch_txdata"
+        ]
+      },
+      "hipero_sem_fetch_txwrite": {
+        "ports": [
+          "hipero_sem/fetch_txwrite",
+          "semicap_spihelper_0/fetch_txwrite"
+        ]
+      },
+      "hipero_sem_fetch_rxread": {
+        "ports": [
+          "hipero_sem/fetch_rxread",
+          "semicap_spihelper_0/fetch_rxread"
+        ]
+      },
+      "semicap_spihelper_0_fetch_rxempty": {
+        "ports": [
+          "semicap_spihelper_0/fetch_rxempty",
+          "hipero_sem/fetch_rxempty"
+        ]
+      },
+      "semicap_spihelper_0_spi_c": {
+        "ports": [
+          "semicap_spihelper_0/spi_c",
+          "spi_c_0"
+        ]
+      },
+      "semicap_spihelper_0_spi_d": {
+        "ports": [
+          "semicap_spihelper_0/spi_d",
+          "spi_d_0"
+        ]
+      },
+      "semicap_spihelper_0_spi_s_n": {
+        "ports": [
+          "semicap_spihelper_0/spi_s_n",
+          "spi_s_n_0"
+        ]
+      },
+      "semicap_axi_0_oConfigRegIrqMask": {
+        "ports": [
+          "semicap_axi_0/oConfigRegIrqMask",
+          "semicap_engine_0/iConfigRegIrqMask"
+        ]
+      },
+      "semicap_axi_0_oConfigRegSemEn": {
+        "ports": [
+          "semicap_axi_0/oConfigRegSemEn",
+          "semicap_engine_0/iConfigRegSemEn"
+        ]
+      },
+      "semicap_axi_0_oMinVoterRegClearStrobe": {
+        "ports": [
+          "semicap_axi_0/oMinVoterRegClearStrobe",
+          "semicap_engine_0/iMinVoterRegClearStrobe"
+        ]
+      },
+      "semicap_axi_0_oMonitorRegByte": {
+        "ports": [
+          "semicap_axi_0/oMonitorRegByte",
+          "semicap_engine_0/iMonitorRegByte"
+        ]
+      },
+      "semicap_axi_0_oMonitorRegGetByte": {
+        "ports": [
+          "semicap_axi_0/oMonitorRegGetByte",
+          "semicap_engine_0/iMonitorRegGetByte"
+        ]
+      },
+      "semicap_axi_0_oMonitorRegPutByte": {
+        "ports": [
+          "semicap_axi_0/oMonitorRegPutByte",
+          "semicap_engine_0/iMonitorRegPutByte"
+        ]
+      },
+      "semicap_axi_0_oMonitorRegWriteStrobe": {
+        "ports": [
+          "semicap_axi_0/oMonitorRegWriteStrobe",
+          "semicap_engine_0/iMonitorRegWriteStrobe"
+        ]
+      },
+      "semicap_axi_0_oResetsReg": {
+        "ports": [
+          "semicap_axi_0/oResetsReg",
+          "semicap_engine_0/iResetsReg"
+        ]
+      },
+      "semicap_axi_0_oTblAddReg": {
+        "ports": [
+          "semicap_axi_0/oTblAddReg",
+          "semicap_engine_0/iTblAddReg"
+        ]
+      },
+      "semicap_engine_0_oConfigRegIrqMask": {
+        "ports": [
+          "semicap_engine_0/oConfigRegIrqMask",
+          "semicap_axi_0/iConfigRegIrqMask"
+        ]
+      },
+      "semicap_engine_0_oConfigRegSemEn": {
+        "ports": [
+          "semicap_engine_0/oConfigRegSemEn",
+          "semicap_axi_0/iConfigRegSemEn"
+        ]
+      },
+      "semicap_engine_0_oTblAddReg": {
+        "ports": [
+          "semicap_engine_0/oTblAddReg",
+          "semicap_axi_0/iTblAddReg"
+        ]
+      },
+      "semicap_engine_0_oMonitorRegByte": {
+        "ports": [
+          "semicap_engine_0/oMonitorRegByte",
+          "semicap_axi_0/iMonitorRegByte"
+        ]
+      },
+      "semicap_engine_0_oStatusRegState": {
+        "ports": [
+          "semicap_engine_0/oStatusRegState",
+          "semicap_axi_0/iStatusRegState"
+        ]
+      },
+      "semicap_engine_0_oStatusRegMonEmpty": {
+        "ports": [
+          "semicap_engine_0/oStatusRegMonEmpty",
+          "semicap_axi_0/iStatusRegMonEmpty"
+        ]
+      },
+      "semicap_engine_0_oStatusRegFifoStatFull": {
+        "ports": [
+          "semicap_engine_0/oStatusRegFifoStatFull",
+          "semicap_axi_0/iStatusRegFifoStatFull"
+        ]
+      },
+      "semicap_engine_0_oStatusRegFifoCmdFull": {
+        "ports": [
+          "semicap_engine_0/oStatusRegFifoCmdFull",
+          "semicap_axi_0/iStatusRegFifoCmdFull"
+        ]
+      },
+      "semicap_engine_0_oMinVoterRegCmpStat": {
+        "ports": [
+          "semicap_engine_0/oMinVoterRegCmpStat",
+          "semicap_axi_0/iMinVoterRegCmpStat"
+        ]
+      },
+      "semicap_engine_0_oMinVoterRegTmrStat": {
+        "ports": [
+          "semicap_engine_0/oMinVoterRegTmrStat",
+          "semicap_axi_0/iMinVoterRegTmrStat"
+        ]
+      },
+      "semicap_engine_0_oDevInfoId": {
+        "ports": [
+          "semicap_engine_0/oDevInfoId",
+          "semicap_axi_0/iDevInfoId"
+        ]
+      },
+      "semicap_engine_0_oDevInfoVersionMajor": {
+        "ports": [
+          "semicap_engine_0/oDevInfoVersionMajor",
+          "semicap_axi_0/iDevInfoVersionMajor"
+        ]
+      },
+      "semicap_engine_0_oDevInfoVersionMinor": {
+        "ports": [
+          "semicap_engine_0/oDevInfoVersionMinor",
+          "semicap_axi_0/iDevInfoVersionMinor"
+        ]
+      },
+      "semicap_engine_0_oIRq": {
+        "ports": [
+          "semicap_engine_0/oIRq",
+          "IRq"
+        ]
+      },
+      "hipero_icap_0_icap_avail": {
+        "ports": [
+          "hipero_icap_0/icap_avail",
+          "icapmux_0/iIcapAvail"
+        ]
+      },
+      "hipero_icap_0_icap_o": {
+        "ports": [
+          "hipero_icap_0/icap_o",
+          "icapmux_0/iIcapO"
+        ]
+      },
+      "hipero_icap_0_icap_prdone": {
+        "ports": [
+          "hipero_icap_0/icap_prdone",
+          "icapmux_0/iIcapPrDone"
+        ]
+      },
+      "hipero_icap_0_icap_prerror": {
+        "ports": [
+          "hipero_icap_0/icap_prerror",
+          "icapmux_0/iIcapPrError"
+        ]
+      },
+      "icapmux_0_oIcapCsib": {
+        "ports": [
+          "icapmux_0/oIcapCsib",
+          "hipero_icap_0/icap_csib"
+        ]
+      },
+      "icapmux_0_oIcapRdWrb": {
+        "ports": [
+          "icapmux_0/oIcapRdWrb",
+          "hipero_icap_0/icap_rdwrb"
+        ]
+      },
+      "icapmux_0_oIcapI": {
+        "ports": [
+          "icapmux_0/oIcapI",
+          "hipero_icap_0/icap_i"
+        ]
+      },
+      "icapmux_0_oHwIcapAvail": {
+        "ports": [
+          "icapmux_0/oHwIcapAvail",
+          "axi_hwicap/icap_avail"
+        ]
+      },
+      "axi_hwicap_icap_csib": {
+        "ports": [
+          "axi_hwicap/icap_csib",
+          "icapmux_0/iHwIcapCsib"
+        ]
+      },
+      "axi_hwicap_icap_o": {
+        "ports": [
+          "axi_hwicap/icap_o",
+          "icapmux_0/iHwIcapO"
+        ]
+      },
+      "icapmux_0_oHwIcapI": {
+        "ports": [
+          "icapmux_0/oHwIcapI",
+          "axi_hwicap/icap_i"
+        ]
+      },
+      "axi_hwicap_icap_rdwrb": {
+        "ports": [
+          "axi_hwicap/icap_rdwrb",
+          "icapmux_0/iHwIcapWr_n"
+        ]
+      },
+      "semicap_engine_0_oHwIcapEos": {
+        "ports": [
+          "semicap_engine_0/oHwIcapEos",
+          "axi_hwicap/eos_in"
+        ]
+      },
+      "semicap_engine_0_oHwIcapGrant": {
+        "ports": [
+          "semicap_engine_0/oHwIcapGrant",
+          "axi_hwicap/cap_gnt"
+        ]
+      },
+      "semicap_engine_0_oHwIcapRelinquish": {
+        "ports": [
+          "semicap_engine_0/oHwIcapRelinquish",
+          "axi_hwicap/cap_rel"
+        ]
+      },
+      "axi_hwicap_cap_req": {
+        "ports": [
+          "axi_hwicap/cap_req",
+          "semicap_engine_0/iHwIcapRequest"
+        ]
+      },
+      "axi_hwicap_ip2intc_irpt": {
+        "ports": [
+          "axi_hwicap/ip2intc_irpt",
+          "semicap_engine_0/iHwIcapIrq"
+        ]
+      },
+      "hipero_sem_icap_csib": {
+        "ports": [
+          "hipero_sem/icap_csib",
+          "icapmux_0/iSemIcapCsib"
+        ]
+      },
+      "hipero_sem_icap_rdwrb": {
+        "ports": [
+          "hipero_sem/icap_rdwrb",
+          "icapmux_0/iSemIcapWr_n"
+        ]
+      },
+      "icapmux_0_oSemIcapAvail": {
+        "ports": [
+          "icapmux_0/oSemIcapAvail",
+          "hipero_sem/icap_avail"
+        ]
+      },
+      "icapmux_0_oSemIcapI": {
+        "ports": [
+          "icapmux_0/oSemIcapI",
+          "hipero_sem/icap_o"
+        ]
+      },
+      "icapmux_0_oSemIcapPrDone": {
+        "ports": [
+          "icapmux_0/oSemIcapPrDone",
+          "hipero_sem/icap_prdone"
+        ]
+      },
+      "icapmux_0_oSemIcapPrError": {
+        "ports": [
+          "icapmux_0/oSemIcapPrError",
+          "hipero_sem/icap_prerror"
+        ]
+      },
+      "hipero_sem_icap_i": {
+        "ports": [
+          "hipero_sem/icap_i",
+          "icapmux_0/iSemIcapO"
+        ]
+      },
+      "semicap_engine_0_oMuxSemSelect": {
+        "ports": [
+          "semicap_engine_0/oMuxSemSelect",
+          "icapmux_0/iEngSemSelect"
+        ]
+      },
+      "semicap_engine_0_oSemAuxErrorCrEs": {
+        "ports": [
+          "semicap_engine_0/oSemAuxErrorCrEs",
+          "hipero_sem/aux_error_cr_es"
+        ]
+      },
+      "semicap_engine_0_oSemAuxErrorCrNe": {
+        "ports": [
+          "semicap_engine_0/oSemAuxErrorCrNe",
+          "hipero_sem/aux_error_cr_ne"
+        ]
+      },
+      "semicap_engine_0_oSemAuxErrorUc": {
+        "ports": [
+          "semicap_engine_0/oSemAuxErrorUc",
+          "hipero_sem/aux_error_uc"
+        ]
+      },
+      "semicap_engine_0_oRpReset_n": {
+        "ports": [
+          "semicap_engine_0/oRpReset_n",
+          "oRpReset_n_0"
+        ]
+      },
+      "semicap_engine_0_oSemFetchTblAddr": {
+        "ports": [
+          "semicap_engine_0/oSemFetchTblAddr",
+          "hipero_sem/fetch_tbladdr"
+        ]
+      },
+      "semicap_engine_0_oSemCmdCode": {
+        "ports": [
+          "semicap_engine_0/oSemCmdCode",
+          "hipero_sem/command_code"
+        ]
+      },
+      "semicap_engine_0_oSemCmdStrobe": {
+        "ports": [
+          "semicap_engine_0/oSemCmdStrobe",
+          "hipero_sem/command_strobe"
+        ]
+      },
+      "semicap_engine_0_oSemCapGrant": {
+        "ports": [
+          "semicap_engine_0/oSemCapGrant",
+          "hipero_sem/cap_gnt"
+        ]
+      },
+      "semicap_engine_0_oSemCapRelinquish": {
+        "ports": [
+          "semicap_engine_0/oSemCapRelinquish",
+          "hipero_sem/cap_rel"
+        ]
+      },
+      "hipero_sem_cap_req": {
+        "ports": [
+          "hipero_sem/cap_req",
+          "semicap_engine_0/iSemCapRequest"
+        ]
+      },
+      "hipero_sem_status_heartbeat": {
+        "ports": [
+          "hipero_sem/status_heartbeat",
+          "semicap_engine_0/iSemStatusheartbeat"
+        ]
+      },
+      "hipero_sem_status_initialization": {
+        "ports": [
+          "hipero_sem/status_initialization",
+          "semicap_engine_0/iSemStatusinitialization"
+        ]
+      },
+      "hipero_sem_status_observation": {
+        "ports": [
+          "hipero_sem/status_observation",
+          "semicap_engine_0/iSemStatusobservation"
+        ]
+      },
+      "hipero_sem_status_correction": {
+        "ports": [
+          "hipero_sem/status_correction",
+          "semicap_engine_0/iSemStatuscorrection"
+        ]
+      },
+      "hipero_sem_status_classification": {
+        "ports": [
+          "hipero_sem/status_classification",
+          "semicap_engine_0/iSemStatusclassification"
+        ]
+      },
+      "hipero_sem_status_injection": {
+        "ports": [
+          "hipero_sem/status_injection",
+          "semicap_engine_0/iSemStatusinjection"
+        ]
+      },
+      "hipero_sem_status_essential": {
+        "ports": [
+          "hipero_sem/status_essential",
+          "semicap_engine_0/iSemStatusessential"
+        ]
+      },
+      "hipero_sem_status_uncorrectable": {
+        "ports": [
+          "hipero_sem/status_uncorrectable",
+          "semicap_engine_0/iSemStatusuncorrectable"
+        ]
+      },
+      "hipero_sem_status_diagnostic_scan": {
+        "ports": [
+          "hipero_sem/status_diagnostic_scan",
+          "semicap_engine_0/iSemStatusdiagnosticScan"
+        ]
+      },
+      "hipero_sem_status_detect_only": {
+        "ports": [
+          "hipero_sem/status_detect_only",
+          "semicap_engine_0/iSemStatusdetectOnly"
+        ]
+      },
+      "semicap_engine_0_oSemMonTxFull": {
+        "ports": [
+          "semicap_engine_0/oSemMonTxFull",
+          "hipero_sem/monitor_txfull"
+        ]
+      },
+      "semicap_engine_0_oSemMonRxData": {
+        "ports": [
+          "semicap_engine_0/oSemMonRxData",
+          "hipero_sem/monitor_rxdata"
+        ]
+      },
+      "semicap_engine_0_oSemMonRxEmpty": {
+        "ports": [
+          "semicap_engine_0/oSemMonRxEmpty",
+          "hipero_sem/monitor_rxempty"
+        ]
+      },
+      "hipero_sem_monitor_txdata": {
+        "ports": [
+          "hipero_sem/monitor_txdata",
+          "semicap_engine_0/iSemMonTxData"
+        ]
+      },
+      "hipero_sem_monitor_txwrite": {
+        "ports": [
+          "hipero_sem/monitor_txwrite",
+          "semicap_engine_0/iSemMonTxWrite"
+        ]
+      },
+      "hipero_sem_monitor_rxread": {
+        "ports": [
+          "hipero_sem/monitor_rxread",
+          "semicap_engine_0/iSemMonRxRead"
+        ]
+      },
+      "hipero_sem_command_busy": {
+        "ports": [
+          "hipero_sem/command_busy",
+          "semicap_engine_0/iSemCmdBusy"
+        ]
+      },
+      "iRpMinVoter_0_1": {
+        "ports": [
+          "iRpMinVoter_0",
+          "semicap_engine_0/iRpMinVoter"
+        ]
+      },
+      "semicap_spihelper_0_fetch_rxdata": {
+        "ports": [
+          "semicap_spihelper_0/fetch_rxdata",
+          "hipero_sem/fetch_rxdata"
+        ]
+      },
+      "semicap_spihelper_0_fetch_txfull": {
+        "ports": [
+          "semicap_spihelper_0/fetch_txfull",
+          "hipero_sem/fetch_txfull"
+        ]
+      },
+      "clk_100MHz_1": {
+        "ports": [
+          "clk_axi",
+          "hipero_icap_0/icap_clk",
+          "axi_hwicap/icap_clk",
+          "axi_hwicap/s_axi_aclk",
+          "hipero_sem/icap_clk",
+          "semicap_axi_0/s00_axi_aclk",
+          "semicap_engine_0/iClk",
+          "semicap_spihelper_0/icap_clk"
+        ]
+      },
+      "s00_axi_aresetn_0_1": {
+        "ports": [
+          "areset_n",
+          "axi_hwicap/s_axi_aresetn",
+          "semicap_axi_0/s00_axi_aresetn",
+          "semicap_engine_0/iRst_n"
+        ]
+      }
+    },
+    "addressing": {
+      "/": {
+        "address_spaces": {
+          "AXI_ENG": {
+            "range": "4K",
+            "width": "32",
+            "segments": {
+              "SEG_semicap_axi_0_S00_AXI_reg": {
+                "address_block": "/semicap_axi_0/S00_AXI/S00_AXI_reg",
+                "offset": "0x000",
+                "range": "4K"
+              }
+            }
+          },
+          "AXI_HW": {
+            "range": "4K",
+            "width": "32",
+            "segments": {
+              "SEG_axi_hwicap_Reg": {
+                "address_block": "/axi_hwicap/S_AXI_LITE/Reg",
+                "offset": "0x000",
+                "range": "4K"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

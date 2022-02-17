@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 21 14:31:56 2019
+# Process ID: 25232
+# Current directory: D:/Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23660 D:\Projects\Hipero\svn\dev\fpga\ip_projects\payload_partition\payload_partition.xpr
+# Log file: D:/Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition/vivado.log
+# Journal file: D:/Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 749.926 ; gain = 125.145
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir d:/projects/hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition -vendor cbkpan -library hipero -taxonomy /UserIP -generated_files -force
+WARNING: [IP_Flow 19-4963] payload_partition_axi_cdma_0_0 has board value specified. The packaged IP will be restricted to usage with board 'xilinx.com:kcu105:part0:1.5'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXI_0' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_LITE_0' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3158] Bus Interface 'M_AXI_0': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 'S_AXI_LITE_0': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+CRITICAL WARNING: [IP_Flow 19-530] File Group 'xilinx_anylanguagesynthesis (Synthesis)': Component file '../../../../../../../../../../../Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/ipshared/64f4/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd' (d:/projects/hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/../../../../../../../../../../../Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/ipshared/64f4/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd) does not exist.
+CRITICAL WARNING: [IP_Flow 19-530] File Group 'xilinx_anylanguagesynthesis (Synthesis)': Component file '../../../../../../../../../../../Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/ip/payload_partition_axi_cdma_0_0/payload_partition_axi_cdma_0_0_ooc.xdc' (d:/projects/hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/../../../../../../../../../../../Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/ip/payload_partition_axi_cdma_0_0/payload_partition_axi_cdma_0_0_ooc.xdc) does not exist.
+CRITICAL WARNING: [IP_Flow 19-530] File Group 'xilinx_anylanguagesynthesis (Synthesis)': Component file '../../../../../../../../../../../Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/ip/payload_partition_axi_cdma_0_0/payload_partition_axi_cdma_0_0.xdc' (d:/projects/hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/../../../../../../../../../../../Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/ip/payload_partition_axi_cdma_0_0/payload_partition_axi_cdma_0_0.xdc) does not exist.
+CRITICAL WARNING: [IP_Flow 19-530] File Group 'xilinx_anylanguagesynthesis (Synthesis)': Component file '../../../../../../../../../../../Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/ip/payload_partition_axi_cdma_0_0/synth/payload_partition_axi_cdma_0_0.vhd' (d:/projects/hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/../../../../../../../../../../../Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/ip/payload_partition_axi_cdma_0_0/synth/payload_partition_axi_cdma_0_0.vhd) does not exist.
+CRITICAL WARNING: [IP_Flow 19-530] File Group 'xilinx_anylanguagebehavioralsimulation (Simulation)': Component file '../../../../../../../../../../../Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/ip/payload_partition_axi_cdma_0_0/sim/payload_partition_axi_cdma_0_0.vhd' (d:/projects/hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/../../../../../../../../../../../Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/ip/payload_partition_axi_cdma_0_0/sim/payload_partition_axi_cdma_0_0.vhd) does not exist.
+WARNING: [IP_Flow 19-991] Unrecognized or unsupported file '../../../../../../../../../../../Projects/Hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/sim/payload_partition.protoinst' found in file group 'Simulation'.
+Resolution: Remove the file from the specified file group.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\projects\hipero\svn\dev\fpga\ip_projects\payload_partition\payload_partition.srcs\sources_1\bd\payload_partition\cbkpan_hipero_payload_partition_wrapper_1.0.zip} [ipx::current_core]
+INFO: [filemgmt 56-101] Creating core container 'd:/projects/hipero/svn/dev/fpga/ip_projects/payload_partition/payload_partition.srcs/sources_1/bd/payload_partition/payload_partition_wrapper_0.xcix' for IP 'payload_partition_wrapper_0'
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 21 14:35:10 2019...

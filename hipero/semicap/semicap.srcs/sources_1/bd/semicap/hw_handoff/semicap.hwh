@@ -1,0 +1,1740 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jul 30 15:53:04 2019" VIVADOVERSION="2019.1.1">
+
+  <SYSTEMINFO ARCH="kintexu" BOARD="xilinx.com:kcu105:part0:1.5" DEVICE="xcku040" NAME="semicap" PACKAGE="ffva1156" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="spi_q_0" SIGIS="undef" SIGNAME="External_Ports_spi_q_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_spihelper_0" PORT="spi_q"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="spi_c_0" SIGIS="undef" SIGNAME="semicap_spihelper_0_spi_c">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_spihelper_0" PORT="spi_c"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="spi_d_0" SIGIS="undef" SIGNAME="semicap_spihelper_0_spi_d">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_spihelper_0" PORT="spi_d"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="spi_s_n_0" SIGIS="undef" SIGNAME="semicap_spihelper_0_spi_s_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_spihelper_0" PORT="spi_s_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="IRq" SIGIS="undef" SIGNAME="semicap_engine_0_oIRq">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_engine_0" PORT="oIRq"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="oRpReset_n_0" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oRpReset_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_engine_0" PORT="oRpReset_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="iRpMinVoter_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_iRpMinVoter_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_engine_0" PORT="iRpMinVoter"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_axi" SIGIS="clk" SIGNAME="External_Ports_clk_axi">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hipero_icap_0" PORT="icap_clk"/>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="icap_clk"/>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_aclk"/>
+        <CONNECTION INSTANCE="hipero_sem" PORT="icap_clk"/>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_aclk"/>
+        <CONNECTION INSTANCE="semicap_engine_0" PORT="iClk"/>
+        <CONNECTION INSTANCE="semicap_spihelper_0" PORT="icap_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="areset_n" SIGIS="rst" SIGNAME="External_Ports_areset_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_aresetn"/>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_aresetn"/>
+        <CONNECTION INSTANCE="semicap_engine_0" PORT="iRst_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="8" NAME="AXI_HW_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_araddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_araddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_HW_arready" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_arready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_arready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_HW_arvalid" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_arvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_arvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="8" NAME="AXI_HW_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_awaddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_awaddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_HW_awready" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_awready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_awready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_HW_awvalid" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_awvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_awvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_HW_bready" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_bready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_bready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="AXI_HW_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_bresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_bresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_HW_bvalid" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_bvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_bvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="AXI_HW_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_rdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_rdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_HW_rready" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_rready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_rready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="AXI_HW_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_rresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_rresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_HW_rvalid" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_rvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_rvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="AXI_HW_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_wdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_wdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_HW_wready" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_wready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_wready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="AXI_HW_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_wstrb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_wstrb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_HW_wvalid" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_wvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_hwicap" PORT="s_axi_wvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="4" NAME="AXI_ENG_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_awaddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_awaddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="AXI_ENG_awprot" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_awprot">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_awprot"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_ENG_awvalid" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_awvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_awvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_ENG_awready" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_awready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_awready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="AXI_ENG_wdata" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_wdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_wdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="AXI_ENG_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_wstrb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_wstrb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_ENG_wvalid" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_wvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_wvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_ENG_wready" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_wready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_wready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="AXI_ENG_bresp" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_bresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_bresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_ENG_bvalid" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_bvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_bvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_ENG_bready" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_bready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_bready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="4" NAME="AXI_ENG_araddr" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_araddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_araddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="AXI_ENG_arprot" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_arprot">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_arprot"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_ENG_arvalid" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_arvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_arvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_ENG_arready" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_arready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_arready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="AXI_ENG_rdata" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_rdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_rdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="AXI_ENG_rresp" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_rresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_rresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AXI_ENG_rvalid" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_rvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_rvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_ENG_rready" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_rready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="semicap_axi_0" PORT="s00_axi_rready"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="External_Interface_AXI_ENG" DATAWIDTH="32" NAME="AXI_ENG" TYPE="SLAVE">
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="12"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+      <PARAMETER NAME="PHASE" VALUE="0.000"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="semicap_clk_axi"/>
+      <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+      <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="AWADDR" PHYSICAL="AXI_ENG_awaddr"/>
+        <PORTMAP LOGICAL="AWPROT" PHYSICAL="AXI_ENG_awprot"/>
+        <PORTMAP LOGICAL="AWVALID" PHYSICAL="AXI_ENG_awvalid"/>
+        <PORTMAP LOGICAL="AWREADY" PHYSICAL="AXI_ENG_awready"/>
+        <PORTMAP LOGICAL="WDATA" PHYSICAL="AXI_ENG_wdata"/>
+        <PORTMAP LOGICAL="WSTRB" PHYSICAL="AXI_ENG_wstrb"/>
+        <PORTMAP LOGICAL="WVALID" PHYSICAL="AXI_ENG_wvalid"/>
+        <PORTMAP LOGICAL="WREADY" PHYSICAL="AXI_ENG_wready"/>
+        <PORTMAP LOGICAL="BRESP" PHYSICAL="AXI_ENG_bresp"/>
+        <PORTMAP LOGICAL="BVALID" PHYSICAL="AXI_ENG_bvalid"/>
+        <PORTMAP LOGICAL="BREADY" PHYSICAL="AXI_ENG_bready"/>
+        <PORTMAP LOGICAL="ARADDR" PHYSICAL="AXI_ENG_araddr"/>
+        <PORTMAP LOGICAL="ARPROT" PHYSICAL="AXI_ENG_arprot"/>
+        <PORTMAP LOGICAL="ARVALID" PHYSICAL="AXI_ENG_arvalid"/>
+        <PORTMAP LOGICAL="ARREADY" PHYSICAL="AXI_ENG_arready"/>
+        <PORTMAP LOGICAL="RDATA" PHYSICAL="AXI_ENG_rdata"/>
+        <PORTMAP LOGICAL="RRESP" PHYSICAL="AXI_ENG_rresp"/>
+        <PORTMAP LOGICAL="RVALID" PHYSICAL="AXI_ENG_rvalid"/>
+        <PORTMAP LOGICAL="RREADY" PHYSICAL="AXI_ENG_rready"/>
+      </PORTMAPS>
+      <MEMORYMAP>
+        <MEMRANGE ADDRESSBLOCK="S00_AXI_reg" BASENAME="C_S00_AXI_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_S00_AXI_HIGHADDR" HIGHVALUE="0x00000FFF" INSTANCE="semicap_axi_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="AXI_ENG" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S00_AXI"/>
+      </MEMORYMAP>
+      <PERIPHERALS>
+        <PERIPHERAL INSTANCE="semicap_axi_0"/>
+      </PERIPHERALS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="External_Interface_AXI_HW" DATAWIDTH="32" NAME="AXI_HW" TYPE="SLAVE">
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="12"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+      <PARAMETER NAME="PHASE" VALUE="0.000"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="semicap_clk_axi"/>
+      <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+      <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="ARADDR" PHYSICAL="AXI_HW_araddr"/>
+        <PORTMAP LOGICAL="ARREADY" PHYSICAL="AXI_HW_arready"/>
+        <PORTMAP LOGICAL="ARVALID" PHYSICAL="AXI_HW_arvalid"/>
+        <PORTMAP LOGICAL="AWADDR" PHYSICAL="AXI_HW_awaddr"/>
+        <PORTMAP LOGICAL="AWREADY" PHYSICAL="AXI_HW_awready"/>
+        <PORTMAP LOGICAL="AWVALID" PHYSICAL="AXI_HW_awvalid"/>
+        <PORTMAP LOGICAL="BREADY" PHYSICAL="AXI_HW_bready"/>
+        <PORTMAP LOGICAL="BRESP" PHYSICAL="AXI_HW_bresp"/>
+        <PORTMAP LOGICAL="BVALID" PHYSICAL="AXI_HW_bvalid"/>
+        <PORTMAP LOGICAL="RDATA" PHYSICAL="AXI_HW_rdata"/>
+        <PORTMAP LOGICAL="RREADY" PHYSICAL="AXI_HW_rready"/>
+        <PORTMAP LOGICAL="RRESP" PHYSICAL="AXI_HW_rresp"/>
+        <PORTMAP LOGICAL="RVALID" PHYSICAL="AXI_HW_rvalid"/>
+        <PORTMAP LOGICAL="WDATA" PHYSICAL="AXI_HW_wdata"/>
+        <PORTMAP LOGICAL="WREADY" PHYSICAL="AXI_HW_wready"/>
+        <PORTMAP LOGICAL="WSTRB" PHYSICAL="AXI_HW_wstrb"/>
+        <PORTMAP LOGICAL="WVALID" PHYSICAL="AXI_HW_wvalid"/>
+      </PORTMAPS>
+      <MEMORYMAP>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x00000FFF" INSTANCE="axi_hwicap" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="AXI_HW" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI_LITE"/>
+      </MEMORYMAP>
+      <PERIPHERALS>
+        <PERIPHERAL INSTANCE="axi_hwicap"/>
+      </PERIPHERALS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE COREREVISION="23" FULLNAME="/axi_hwicap" HWVERSION="3.0" INSTANCE="axi_hwicap" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_hwicap" VLNV="xilinx.com:ip:axi_hwicap:3.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_hwicap;v=v3_0;d=pg134-axi-hwicap.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_SHARED_STARTUP" VALUE="0"/>
+        <PARAMETER NAME="C_ICAP_EXTERNAL" VALUE="1"/>
+        <PARAMETER NAME="C_INCLUDE_STARTUP" VALUE="0"/>
+        <PARAMETER NAME="C_ENABLE_ASYNC" VALUE="0"/>
+        <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="9"/>
+        <PARAMETER NAME="C_WRITE_FIFO_DEPTH" VALUE="1024"/>
+        <PARAMETER NAME="C_READ_FIFO_DEPTH" VALUE="256"/>
+        <PARAMETER NAME="C_ICAP_WIDTH_S" VALUE="X32"/>
+        <PARAMETER NAME="C_DEVICE_ID" VALUE="0x04224093"/>
+        <PARAMETER NAME="C_MODE" VALUE="0"/>
+        <PARAMETER NAME="C_NOREAD" VALUE="0"/>
+        <PARAMETER NAME="C_SIMULATION" VALUE="2"/>
+        <PARAMETER NAME="C_BRAM_SRL_FIFO_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_FAMILY" VALUE="kintexu"/>
+        <PARAMETER NAME="C_OPERATION" VALUE="1"/>
+        <PARAMETER NAME="C_ICAP_DWIDTH" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="semicap_axi_hwicap_0"/>
+        <PARAMETER NAME="UC_FAMILY" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_BASEADDR" VALUE="0x00000000"/>
+        <PARAMETER NAME="C_HIGHADDR" VALUE="0x00000FFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="icap_clk" SIGIS="clk" SIGNAME="External_Ports_clk_axi">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_axi"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="eos_in" SIGIS="undef" SIGNAME="semicap_engine_0_oHwIcapEos">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oHwIcapEos"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="External_Ports_clk_axi">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_axi"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_aresetn" SIGIS="rst" SIGNAME="External_Ports_areset_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="areset_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="s_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_awvalid" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_awready" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_wvalid" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_wready" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_bvalid" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_bready" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="s_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_arvalid" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_arready" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="s_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_rvalid" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_rready" SIGIS="undef" SIGNAME="axi_hwicap_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_HW_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ip2intc_irpt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="axi_hwicap_ip2intc_irpt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iHwIcapIrq"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="icap_csib" SIGIS="undef" SIGNAME="axi_hwicap_icap_csib">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="iHwIcapCsib"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="icap_rdwrb" SIGIS="undef" SIGNAME="axi_hwicap_icap_rdwrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="iHwIcapWr_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cap_req" SIGIS="undef" SIGNAME="axi_hwicap_cap_req">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iHwIcapRequest"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="icap_i" RIGHT="0" SIGIS="undef" SIGNAME="icapmux_0_oHwIcapI">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="oHwIcapI"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="icap_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_icap_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="iHwIcapO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cap_gnt" SIGIS="undef" SIGNAME="semicap_engine_0_oHwIcapGrant">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oHwIcapGrant"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="icap_avail" SIGIS="undef" SIGNAME="icapmux_0_oHwIcapAvail">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="oHwIcapAvail"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cap_rel" SIGIS="undef" SIGNAME="semicap_engine_0_oHwIcapRelinquish">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oHwIcapRelinquish"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="External_Interface_AXI_HW" DATAWIDTH="32" NAME="S_AXI_LITE" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="semicap_clk_axi"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_araddr"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_arready"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_arvalid"/>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_awaddr"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_awready"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_awvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_bready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_bvalid"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_rdata"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_rready"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_rvalid"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_wdata"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_wready"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="ICAP" TYPE="INITIATOR" VLNV="xilinx.com:interface:icap:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="avail" PHYSICAL="icap_avail"/>
+            <PORTMAP LOGICAL="csib" PHYSICAL="icap_csib"/>
+            <PORTMAP LOGICAL="i" PHYSICAL="icap_o"/>
+            <PORTMAP LOGICAL="o" PHYSICAL="icap_i"/>
+            <PORTMAP LOGICAL="rdwrb" PHYSICAL="icap_rdwrb"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="ICAP_ARBITER" TYPE="INITIATOR" VLNV="xilinx.com:interface:cap:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="GNT" PHYSICAL="cap_gnt"/>
+            <PORTMAP LOGICAL="REL" PHYSICAL="cap_rel"/>
+            <PORTMAP LOGICAL="REQ" PHYSICAL="cap_req"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/hipero_icap_0" HWVERSION="2.0" INSTANCE="hipero_icap_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="hipero_icap" VLNV="cbkpan:hipero:hipero_icap:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="semicap_hipero_icap_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="icap_avail" SIGIS="undef" SIGNAME="hipero_icap_0_icap_avail">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="iIcapAvail"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="icap_prdone" SIGIS="undef" SIGNAME="hipero_icap_0_icap_prdone">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="iIcapPrDone"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="icap_prerror" SIGIS="undef" SIGNAME="hipero_icap_0_icap_prerror">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="iIcapPrError"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="icap_o" RIGHT="0" SIGIS="undef" SIGNAME="hipero_icap_0_icap_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="iIcapO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fecc_crcerror" SIGIS="undef" SIGNAME="hipero_icap_0_fecc_crcerror">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fecc_crcerror"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fecc_eccerrornotsingle" SIGIS="undef" SIGNAME="hipero_icap_0_fecc_eccerrornotsingle">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fecc_eccerrornotsingle"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fecc_eccerrorsingle" SIGIS="undef" SIGNAME="hipero_icap_0_fecc_eccerrorsingle">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fecc_eccerrorsingle"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fecc_endofframe" SIGIS="undef" SIGNAME="hipero_icap_0_fecc_endofframe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fecc_endofframe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fecc_endofscan" SIGIS="undef" SIGNAME="hipero_icap_0_fecc_endofscan">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fecc_endofscan"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="25" NAME="fecc_far" RIGHT="0" SIGIS="undef" SIGNAME="hipero_icap_0_fecc_far">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fecc_far"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="icap_clk" SIGIS="clk" SIGNAME="External_Ports_clk_axi">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_axi"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="icap_csib" SIGIS="undef" SIGNAME="icapmux_0_oIcapCsib">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="oIcapCsib"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="icap_rdwrb" SIGIS="undef" SIGNAME="icapmux_0_oIcapRdWrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="oIcapRdWrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="icap_i" RIGHT="0" SIGIS="undef" SIGNAME="icapmux_0_oIcapI">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="oIcapI"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="fecc_farsel" RIGHT="0" SIGIS="undef" SIGNAME="hipero_sem_fecc_farsel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fecc_farsel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="11" FULLNAME="/hipero_sem" HWVERSION="3.1" INSTANCE="hipero_sem" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sem_ultra" VLNV="xilinx.com:ip:sem_ultra:3.1">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=sem_ultra;v=v3_1;d=pg187-ultrascale-sem.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="c_arch" VALUE="0"/>
+        <PARAMETER NAME="c_family" VALUE="kintexu"/>
+        <PARAMETER NAME="c_feature_set" VALUE="3"/>
+        <PARAMETER NAME="c_has_error_injection" VALUE="1"/>
+        <PARAMETER NAME="c_extra_checks" VALUE="4"/>
+        <PARAMETER NAME="c_helper_block_loc" VALUE="1"/>
+        <PARAMETER NAME="c_config_prim_loc" VALUE="1"/>
+        <PARAMETER NAME="c_command_code_width" VALUE="40"/>
+        <PARAMETER NAME="c_fecc_far_width" VALUE="26"/>
+        <PARAMETER NAME="c_vusp_slr" VALUE="0"/>
+        <PARAMETER NAME="b_debug" VALUE="0"/>
+        <PARAMETER NAME="b_cosim" VALUE="0"/>
+        <PARAMETER NAME="b_dfset" VALUE="0"/>
+        <PARAMETER NAME="MODE" VALUE="mitigation_and_testing"/>
+        <PARAMETER NAME="CLOCK_PERIOD" VALUE="10000"/>
+        <PARAMETER NAME="ENABLE_CLASSIFICATION" VALUE="true"/>
+        <PARAMETER NAME="LOCATE_CONFIG_PRIM" VALUE="example_design"/>
+        <PARAMETER NAME="Component_Name" VALUE="semicap_hipero_sem_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="status_heartbeat" SIGIS="undef" SIGNAME="hipero_sem_status_heartbeat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemStatusheartbeat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="status_initialization" SIGIS="undef" SIGNAME="hipero_sem_status_initialization">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemStatusinitialization"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="status_observation" SIGIS="undef" SIGNAME="hipero_sem_status_observation">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemStatusobservation"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="status_correction" SIGIS="undef" SIGNAME="hipero_sem_status_correction">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemStatuscorrection"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="status_classification" SIGIS="undef" SIGNAME="hipero_sem_status_classification">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemStatusclassification"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="status_injection" SIGIS="undef" SIGNAME="hipero_sem_status_injection">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemStatusinjection"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="status_essential" SIGIS="undef" SIGNAME="hipero_sem_status_essential">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemStatusessential"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="status_uncorrectable" SIGIS="undef" SIGNAME="hipero_sem_status_uncorrectable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemStatusuncorrectable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="status_diagnostic_scan" SIGIS="undef" SIGNAME="hipero_sem_status_diagnostic_scan">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemStatusdiagnosticScan"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="status_detect_only" SIGIS="undef" SIGNAME="hipero_sem_status_detect_only">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemStatusdetectOnly"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="fetch_txdata" RIGHT="0" SIGIS="undef" SIGNAME="hipero_sem_fetch_txdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_spihelper_0" PORT="fetch_txdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fetch_txwrite" SIGIS="undef" SIGNAME="hipero_sem_fetch_txwrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_spihelper_0" PORT="fetch_txwrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fetch_txfull" SIGIS="undef" SIGNAME="semicap_spihelper_0_fetch_txfull">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_spihelper_0" PORT="fetch_txfull"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="fetch_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="semicap_spihelper_0_fetch_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_spihelper_0" PORT="fetch_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fetch_rxread" SIGIS="undef" SIGNAME="hipero_sem_fetch_rxread">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_spihelper_0" PORT="fetch_rxread"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fetch_rxempty" SIGIS="undef" SIGNAME="semicap_spihelper_0_fetch_rxempty">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_spihelper_0" PORT="fetch_rxempty"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="fetch_tbladdr" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oSemFetchTblAddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oSemFetchTblAddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="monitor_txdata" RIGHT="0" SIGIS="undef" SIGNAME="hipero_sem_monitor_txdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemMonTxData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="monitor_txwrite" SIGIS="undef" SIGNAME="hipero_sem_monitor_txwrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemMonTxWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="monitor_txfull" SIGIS="undef" SIGNAME="semicap_engine_0_oSemMonTxFull">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oSemMonTxFull"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="monitor_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oSemMonRxData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oSemMonRxData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="monitor_rxread" SIGIS="undef" SIGNAME="hipero_sem_monitor_rxread">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemMonRxRead"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="monitor_rxempty" SIGIS="undef" SIGNAME="semicap_engine_0_oSemMonRxEmpty">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oSemMonRxEmpty"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="command_strobe" SIGIS="undef" SIGNAME="semicap_engine_0_oSemCmdStrobe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oSemCmdStrobe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="command_busy" SIGIS="undef" SIGNAME="hipero_sem_command_busy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemCmdBusy"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="39" NAME="command_code" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oSemCmdCode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oSemCmdCode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="icap_clk" SIGIS="clk" SIGNAME="External_Ports_clk_axi">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_axi"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="icap_o" RIGHT="0" SIGIS="undef" SIGNAME="icapmux_0_oSemIcapI">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="oSemIcapI"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="icap_csib" SIGIS="undef" SIGNAME="hipero_sem_icap_csib">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="iSemIcapCsib"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="icap_rdwrb" SIGIS="undef" SIGNAME="hipero_sem_icap_rdwrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="iSemIcapWr_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="icap_i" RIGHT="0" SIGIS="undef" SIGNAME="hipero_sem_icap_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="iSemIcapO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="icap_prerror" SIGIS="undef" SIGNAME="icapmux_0_oSemIcapPrError">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="oSemIcapPrError"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="icap_prdone" SIGIS="undef" SIGNAME="icapmux_0_oSemIcapPrDone">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="oSemIcapPrDone"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="icap_avail" SIGIS="undef" SIGNAME="icapmux_0_oSemIcapAvail">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="oSemIcapAvail"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cap_rel" SIGIS="undef" SIGNAME="semicap_engine_0_oSemCapRelinquish">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oSemCapRelinquish"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cap_gnt" SIGIS="undef" SIGNAME="semicap_engine_0_oSemCapGrant">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oSemCapGrant"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cap_req" SIGIS="undef" SIGNAME="hipero_sem_cap_req">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iSemCapRequest"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fecc_eccerrornotsingle" SIGIS="undef" SIGNAME="hipero_icap_0_fecc_eccerrornotsingle">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="fecc_eccerrornotsingle"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fecc_eccerrorsingle" SIGIS="undef" SIGNAME="hipero_icap_0_fecc_eccerrorsingle">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="fecc_eccerrorsingle"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fecc_endofframe" SIGIS="undef" SIGNAME="hipero_icap_0_fecc_endofframe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="fecc_endofframe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fecc_endofscan" SIGIS="undef" SIGNAME="hipero_icap_0_fecc_endofscan">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="fecc_endofscan"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fecc_crcerror" SIGIS="undef" SIGNAME="hipero_icap_0_fecc_crcerror">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="fecc_crcerror"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="25" NAME="fecc_far" RIGHT="0" SIGIS="undef" SIGNAME="hipero_icap_0_fecc_far">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="fecc_far"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="fecc_farsel" RIGHT="0" SIGIS="undef" SIGNAME="hipero_sem_fecc_farsel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="fecc_farsel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aux_error_cr_ne" SIGIS="undef" SIGNAME="semicap_engine_0_oSemAuxErrorCrNe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oSemAuxErrorCrNe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aux_error_cr_es" SIGIS="undef" SIGNAME="semicap_engine_0_oSemAuxErrorCrEs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oSemAuxErrorCrEs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aux_error_uc" SIGIS="undef" SIGNAME="semicap_engine_0_oSemAuxErrorUc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oSemAuxErrorUc"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="cap" TYPE="INITIATOR" VLNV="xilinx.com:interface:cap:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="GNT" PHYSICAL="cap_gnt"/>
+            <PORTMAP LOGICAL="REL" PHYSICAL="cap_rel"/>
+            <PORTMAP LOGICAL="REQ" PHYSICAL="cap_req"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/icapmux_0" HWVERSION="1.0" INSTANCE="icapmux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="icapmux" VLNV="xilinx.com:module_ref:icapmux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="semicap_icapmux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="oIcapCsib" SIGIS="undef" SIGNAME="icapmux_0_oIcapCsib">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="icap_csib"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="oIcapI" RIGHT="0" SIGIS="undef" SIGNAME="icapmux_0_oIcapI">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="icap_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oIcapRdWrb" SIGIS="undef" SIGNAME="icapmux_0_oIcapRdWrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="icap_rdwrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iIcapAvail" SIGIS="undef" SIGNAME="hipero_icap_0_icap_avail">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="icap_avail"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="iIcapO" RIGHT="0" SIGIS="undef" SIGNAME="hipero_icap_0_icap_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="icap_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iIcapPrDone" SIGIS="undef" SIGNAME="hipero_icap_0_icap_prdone">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="icap_prdone"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iIcapPrError" SIGIS="undef" SIGNAME="hipero_icap_0_icap_prerror">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_icap_0" PORT="icap_prerror"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oHwIcapAvail" SIGIS="undef" SIGNAME="icapmux_0_oHwIcapAvail">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_hwicap" PORT="icap_avail"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="oHwIcapI" RIGHT="0" SIGIS="undef" SIGNAME="icapmux_0_oHwIcapI">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_hwicap" PORT="icap_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iHwIcapCsib" SIGIS="undef" SIGNAME="axi_hwicap_icap_csib">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_hwicap" PORT="icap_csib"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="iHwIcapO" RIGHT="0" SIGIS="undef" SIGNAME="axi_hwicap_icap_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_hwicap" PORT="icap_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iHwIcapWr_n" SIGIS="undef" SIGNAME="axi_hwicap_icap_rdwrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_hwicap" PORT="icap_rdwrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oSemIcapAvail" SIGIS="undef" SIGNAME="icapmux_0_oSemIcapAvail">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="icap_avail"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="oSemIcapI" RIGHT="0" SIGIS="undef" SIGNAME="icapmux_0_oSemIcapI">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="icap_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oSemIcapPrDone" SIGIS="undef" SIGNAME="icapmux_0_oSemIcapPrDone">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="icap_prdone"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oSemIcapPrError" SIGIS="undef" SIGNAME="icapmux_0_oSemIcapPrError">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="icap_prerror"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemIcapCsib" SIGIS="undef" SIGNAME="hipero_sem_icap_csib">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="icap_csib"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemIcapWr_n" SIGIS="undef" SIGNAME="hipero_sem_icap_rdwrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="icap_rdwrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="iSemIcapO" RIGHT="0" SIGIS="undef" SIGNAME="hipero_sem_icap_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="icap_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iEngSemSelect" SIGIS="undef" SIGNAME="semicap_engine_0_oMuxSemSelect">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oMuxSemSelect"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/semicap_axi_0" HWVERSION="1.0" INSTANCE="semicap_axi_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="semicap_axi" VLNV="cbkpan:hipero:semicap_axi:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="5"/>
+        <PARAMETER NAME="Component_Name" VALUE="semicap_semicap_axi_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_S00_AXI_BASEADDR" VALUE="0x00000000"/>
+        <PARAMETER NAME="C_S00_AXI_HIGHADDR" VALUE="0x00000FFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="2" NAME="iMinVoterRegTmrStat" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oMinVoterRegTmrStat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oMinVoterRegTmrStat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="iDevInfoId" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oDevInfoId">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oDevInfoId"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="iDevInfoVersionMajor" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oDevInfoVersionMajor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oDevInfoVersionMajor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="iDevInfoVersionMinor" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oDevInfoVersionMinor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oDevInfoVersionMinor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iMinVoterRegCmpStat" SIGIS="undef" SIGNAME="semicap_engine_0_oMinVoterRegCmpStat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oMinVoterRegCmpStat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iStatusRegFifoCmdFull" SIGIS="undef" SIGNAME="semicap_engine_0_oStatusRegFifoCmdFull">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oStatusRegFifoCmdFull"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iStatusRegFifoStatFull" SIGIS="undef" SIGNAME="semicap_engine_0_oStatusRegFifoStatFull">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oStatusRegFifoStatFull"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iStatusRegMonEmpty" SIGIS="undef" SIGNAME="semicap_engine_0_oStatusRegMonEmpty">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oStatusRegMonEmpty"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="iStatusRegState" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oStatusRegState">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oStatusRegState"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oMinVoterRegClearStrobe" SIGIS="undef" SIGNAME="semicap_axi_0_oMinVoterRegClearStrobe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iMinVoterRegClearStrobe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oMonitorRegGetByte" SIGIS="undef" SIGNAME="semicap_axi_0_oMonitorRegGetByte">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iMonitorRegGetByte"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oMonitorRegPutByte" SIGIS="undef" SIGNAME="semicap_axi_0_oMonitorRegPutByte">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iMonitorRegPutByte"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oMonitorRegWriteStrobe" SIGIS="undef" SIGNAME="semicap_axi_0_oMonitorRegWriteStrobe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iMonitorRegWriteStrobe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="oResetsReg" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_oResetsReg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iResetsReg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="iConfigRegIrqMask" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oConfigRegIrqMask">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oConfigRegIrqMask"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iConfigRegSemEn" SIGIS="undef" SIGNAME="semicap_engine_0_oConfigRegSemEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oConfigRegSemEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="iMonitorRegByte" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oMonitorRegByte">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oMonitorRegByte"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="iTblAddReg" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oTblAddReg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="oTblAddReg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="oConfigRegIrqMask" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_oConfigRegIrqMask">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iConfigRegIrqMask"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oConfigRegSemEn" SIGIS="undef" SIGNAME="semicap_axi_0_oConfigRegSemEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iConfigRegSemEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="oMonitorRegByte" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_oMonitorRegByte">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iMonitorRegByte"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="oTblAddReg" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_oTblAddReg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_engine_0" PORT="iTblAddReg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="s00_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="s00_axi_awprot" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_awprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s00_axi_awvalid" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s00_axi_awready" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s00_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s00_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s00_axi_wvalid" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s00_axi_wready" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s00_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s00_axi_bvalid" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s00_axi_bready" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="s00_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="s00_axi_arprot" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s00_axi_arvalid" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s00_axi_arready" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="s00_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s00_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s00_axi_rvalid" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s00_axi_rready" SIGIS="undef" SIGNAME="semicap_axi_0_s00_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_imp" PORT="AXI_ENG_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="External_Ports_clk_axi">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_axi"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s00_axi_aresetn" SIGIS="rst" SIGNAME="External_Ports_areset_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="areset_n"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="External_Interface_AXI_ENG" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="WIZ_DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="WIZ_NUM_REG" VALUE="8"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="5"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="semicap_clk_axi"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s00_axi_awaddr"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="s00_axi_awprot"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s00_axi_awvalid"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s00_axi_awready"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s00_axi_wdata"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s00_axi_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s00_axi_wvalid"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s00_axi_wready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s00_axi_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s00_axi_bvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s00_axi_bready"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s00_axi_araddr"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="s00_axi_arprot"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s00_axi_arvalid"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s00_axi_arready"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s00_axi_rdata"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s00_axi_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s00_axi_rvalid"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s00_axi_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/semicap_engine_0" HWVERSION="1.0" INSTANCE="semicap_engine_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="semicap_engine" VLNV="cbkpan:hipero:semicap_engine:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="semicap_semicap_engine_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="iClk" SIGIS="clk" SIGNAME="External_Ports_clk_axi">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_axi"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="iConfigRegIrqMask" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_oConfigRegIrqMask">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="oConfigRegIrqMask"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iConfigRegSemEn" SIGIS="undef" SIGNAME="semicap_axi_0_oConfigRegSemEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="oConfigRegSemEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iHwIcapIrq" SIGIS="undef" SIGNAME="axi_hwicap_ip2intc_irpt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_hwicap" PORT="ip2intc_irpt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iHwIcapRequest" SIGIS="undef" SIGNAME="axi_hwicap_cap_req">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_hwicap" PORT="cap_req"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iMinVoterRegClearStrobe" SIGIS="undef" SIGNAME="semicap_axi_0_oMinVoterRegClearStrobe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="oMinVoterRegClearStrobe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="iMonitorRegByte" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_oMonitorRegByte">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="oMonitorRegByte"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iMonitorRegGetByte" SIGIS="undef" SIGNAME="semicap_axi_0_oMonitorRegGetByte">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="oMonitorRegGetByte"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iMonitorRegPutByte" SIGIS="undef" SIGNAME="semicap_axi_0_oMonitorRegPutByte">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="oMonitorRegPutByte"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iMonitorRegWriteStrobe" SIGIS="undef" SIGNAME="semicap_axi_0_oMonitorRegWriteStrobe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="oMonitorRegWriteStrobe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="iResetsReg" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_oResetsReg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="oResetsReg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="iRpMinVoter" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_iRpMinVoter_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="iRpMinVoter_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iRst_n" SIGIS="rst" SIGNAME="External_Ports_areset_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="areset_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemCapRequest" SIGIS="undef" SIGNAME="hipero_sem_cap_req">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="cap_req"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemCmdBusy" SIGIS="undef" SIGNAME="hipero_sem_command_busy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="command_busy"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemMonRxRead" SIGIS="undef" SIGNAME="hipero_sem_monitor_rxread">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="monitor_rxread"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="iSemMonTxData" RIGHT="0" SIGIS="undef" SIGNAME="hipero_sem_monitor_txdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="monitor_txdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemMonTxWrite" SIGIS="undef" SIGNAME="hipero_sem_monitor_txwrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="monitor_txwrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemStatusclassification" SIGIS="undef" SIGNAME="hipero_sem_status_classification">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="status_classification"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemStatuscorrection" SIGIS="undef" SIGNAME="hipero_sem_status_correction">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="status_correction"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemStatusdetectOnly" SIGIS="undef" SIGNAME="hipero_sem_status_detect_only">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="status_detect_only"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemStatusdiagnosticScan" SIGIS="undef" SIGNAME="hipero_sem_status_diagnostic_scan">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="status_diagnostic_scan"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemStatusessential" SIGIS="undef" SIGNAME="hipero_sem_status_essential">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="status_essential"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemStatusheartbeat" SIGIS="undef" SIGNAME="hipero_sem_status_heartbeat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="status_heartbeat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemStatusinitialization" SIGIS="undef" SIGNAME="hipero_sem_status_initialization">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="status_initialization"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemStatusinjection" SIGIS="undef" SIGNAME="hipero_sem_status_injection">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="status_injection"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemStatusobservation" SIGIS="undef" SIGNAME="hipero_sem_status_observation">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="status_observation"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSemStatusuncorrectable" SIGIS="undef" SIGNAME="hipero_sem_status_uncorrectable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="status_uncorrectable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="iTblAddReg" RIGHT="0" SIGIS="undef" SIGNAME="semicap_axi_0_oTblAddReg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="oTblAddReg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="oConfigRegIrqMask" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oConfigRegIrqMask">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="iConfigRegIrqMask"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oConfigRegSemEn" SIGIS="undef" SIGNAME="semicap_engine_0_oConfigRegSemEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="iConfigRegSemEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="oDevInfoId" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oDevInfoId">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="iDevInfoId"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="oDevInfoVersionMajor" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oDevInfoVersionMajor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="iDevInfoVersionMajor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="oDevInfoVersionMinor" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oDevInfoVersionMinor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="iDevInfoVersionMinor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oHwIcapEos" SIGIS="undef" SIGNAME="semicap_engine_0_oHwIcapEos">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_hwicap" PORT="eos_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oHwIcapGrant" SIGIS="undef" SIGNAME="semicap_engine_0_oHwIcapGrant">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_hwicap" PORT="cap_gnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oHwIcapRelinquish" SIGIS="undef" SIGNAME="semicap_engine_0_oHwIcapRelinquish">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_hwicap" PORT="cap_rel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oIRq" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="semicap_engine_0_oIRq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="IRq"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oMinVoterRegCmpStat" SIGIS="undef" SIGNAME="semicap_engine_0_oMinVoterRegCmpStat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="iMinVoterRegCmpStat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="oMinVoterRegTmrStat" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oMinVoterRegTmrStat">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="iMinVoterRegTmrStat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="oMonitorRegByte" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oMonitorRegByte">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="iMonitorRegByte"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oMuxSemSelect" SIGIS="undef" SIGNAME="semicap_engine_0_oMuxSemSelect">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="icapmux_0" PORT="iEngSemSelect"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="oRpReset_n" RIGHT="0" SIGIS="rst" SIGNAME="semicap_engine_0_oRpReset_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="oRpReset_n_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oSemAuxErrorCrEs" SIGIS="undef" SIGNAME="semicap_engine_0_oSemAuxErrorCrEs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="aux_error_cr_es"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oSemAuxErrorCrNe" SIGIS="undef" SIGNAME="semicap_engine_0_oSemAuxErrorCrNe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="aux_error_cr_ne"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oSemAuxErrorUc" SIGIS="undef" SIGNAME="semicap_engine_0_oSemAuxErrorUc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="aux_error_uc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oSemCapGrant" SIGIS="undef" SIGNAME="semicap_engine_0_oSemCapGrant">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="cap_gnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oSemCapRelinquish" SIGIS="undef" SIGNAME="semicap_engine_0_oSemCapRelinquish">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="cap_rel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="39" NAME="oSemCmdCode" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oSemCmdCode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="command_code"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oSemCmdStrobe" SIGIS="undef" SIGNAME="semicap_engine_0_oSemCmdStrobe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="command_strobe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="oSemFetchTblAddr" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oSemFetchTblAddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fetch_tbladdr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="oSemMonRxData" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oSemMonRxData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="monitor_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oSemMonRxEmpty" SIGIS="undef" SIGNAME="semicap_engine_0_oSemMonRxEmpty">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="monitor_rxempty"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oSemMonTxFull" SIGIS="undef" SIGNAME="semicap_engine_0_oSemMonTxFull">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="monitor_txfull"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oStatusRegFifoCmdFull" SIGIS="undef" SIGNAME="semicap_engine_0_oStatusRegFifoCmdFull">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="iStatusRegFifoCmdFull"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oStatusRegFifoStatFull" SIGIS="undef" SIGNAME="semicap_engine_0_oStatusRegFifoStatFull">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="iStatusRegFifoStatFull"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oStatusRegMonEmpty" SIGIS="undef" SIGNAME="semicap_engine_0_oStatusRegMonEmpty">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="iStatusRegMonEmpty"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="oStatusRegState" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oStatusRegState">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="iStatusRegState"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="oTblAddReg" RIGHT="0" SIGIS="undef" SIGNAME="semicap_engine_0_oTblAddReg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="semicap_axi_0" PORT="iTblAddReg"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/semicap_spihelper_0" HWVERSION="1.0" INSTANCE="semicap_spihelper_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="semicap_spihelper" VLNV="cbkpan:hipero:semicap_spihelper:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="semicap_semicap_spihelper_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="icap_clk" SIGIS="clk" SIGNAME="External_Ports_clk_axi">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_axi"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="spi_c" SIGIS="undef" SIGNAME="semicap_spihelper_0_spi_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="spi_c_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="spi_d" SIGIS="undef" SIGNAME="semicap_spihelper_0_spi_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="spi_d_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="spi_s_n" SIGIS="undef" SIGNAME="semicap_spihelper_0_spi_s_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="spi_s_n_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="spi_q" SIGIS="undef" SIGNAME="External_Ports_spi_q_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="spi_q_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="fetch_txdata" RIGHT="0" SIGIS="undef" SIGNAME="hipero_sem_fetch_txdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fetch_txdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fetch_txwrite" SIGIS="undef" SIGNAME="hipero_sem_fetch_txwrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fetch_txwrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fetch_txfull" SIGIS="undef" SIGNAME="semicap_spihelper_0_fetch_txfull">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fetch_txfull"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="fetch_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="semicap_spihelper_0_fetch_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fetch_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fetch_rxread" SIGIS="undef" SIGNAME="hipero_sem_fetch_rxread">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fetch_rxread"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fetch_rxempty" SIGIS="undef" SIGNAME="semicap_spihelper_0_fetch_rxempty">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hipero_sem" PORT="fetch_rxempty"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Apr 15 13:43:46 2021
+# Process ID: 9428
+# Current directory: E:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20972 E:\Projekty\HIPERO\delivery\delivery\Software\SW1 - FPGA IP-cores used in HIPERO DM\CBK IP-cores\ip_projects\semicap\semicap.xpr
+# Log file: E:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap/vivado.log
+# Journal file: E:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {E:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap/semicap.xpr}
+update_compile_order -fileset sources_1

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct  7 15:01:56 2019
+# Process ID: 14224
+# Current directory: F:/Projekty/HIPERO/dev/fpga/ip_projects/semicap_axi
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8480 F:\Projekty\HIPERO\dev\fpga\ip_projects\semicap_axi\edit_semicap_axi_v1_0.xpr
+# Log file: F:/Projekty/HIPERO/dev/fpga/ip_projects/semicap_axi/vivado.log
+# Journal file: F:/Projekty/HIPERO/dev/fpga/ip_projects/semicap_axi\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Projekty/HIPERO/dev/fpga/ip_projects/semicap_axi/edit_semicap_axi_v1_0.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_axi' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Projekty/HIPERO/dev/fpga/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'I:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 828.934 ; gain = 206.477
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  7 16:09:47 2019...

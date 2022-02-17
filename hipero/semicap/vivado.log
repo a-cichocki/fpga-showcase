@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Apr 15 13:43:46 2021
+# Process ID: 9428
+# Current directory: E:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20972 E:\Projekty\HIPERO\delivery\delivery\Software\SW1 - FPGA IP-cores used in HIPERO DM\CBK IP-cores\ip_projects\semicap\semicap.xpr
+# Log file: E:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap/vivado.log
+# Journal file: E:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {E:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap/semicap.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap'
+INFO: [Project 1-313] Project file moved from 'F:/Projekty/HIPERO/dev/fpga/ip_projects/semicap' since last save.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/projects/hipero/svn/dev/fpga/ip_projects/semicap/component.xml'.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'E:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_repo'; using path 'F:/Projekty/HIPERO/dev/fpga/ip_repo' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Projekty/HIPERO/dev/fpga/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'semicap_semicap_spihelper_0_0' generated file not found 'e:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_spihelper/semicap_spihelper.srcs/sources_1/imports/imports/sem_ultra_0_spi_byte.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'semicap_semicap_spihelper_0_0' generated file not found 'e:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_spihelper/semicap_spihelper.srcs/sources_1/imports/imports/sem_ultra_0_spi.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'semicap_semicap_spihelper_0_0' generated file not found 'e:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_spihelper/semicap_spihelper.srcs/sources_1/imports/imports/sem_ultra_0_spi_byte.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'semicap_semicap_spihelper_0_0' generated file not found 'e:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_spihelper/semicap_spihelper.srcs/sources_1/imports/imports/sem_ultra_0_spi.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_mon_cmd' generated file not found 'e:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap/semicap.srcs/sources_1/bd/semicap/ip/semicap_semicap_engine_0_0_1/semicap_engine.srcs/sources_1/ip/fifo_mon_cmd/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_mon_cmd' generated file not found 'e:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap/semicap.srcs/sources_1/bd/semicap/ip/semicap_semicap_engine_0_0_1/semicap_engine.srcs/sources_1/ip/fifo_mon_cmd/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_mon_cmd' generated file not found 'e:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap/semicap.srcs/sources_1/bd/semicap/ip/semicap_semicap_engine_0_0_1/semicap_engine.srcs/sources_1/ip/fifo_mon_cmd/simulation/fifo_generator_vlog_beh.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_mon_cmd' generated file not found 'e:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap/semicap.srcs/sources_1/bd/semicap/ip/semicap_semicap_engine_0_0_1/semicap_engine.srcs/sources_1/ip/fifo_mon_cmd/hdl/fifo_generator_v13_2_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_mon_stat' generated file not found 'e:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap/semicap.srcs/sources_1/bd/semicap/ip/semicap_semicap_engine_0_0_1/semicap_engine.srcs/sources_1/ip/fifo_mon_stat/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_mon_stat' generated file not found 'e:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap/semicap.srcs/sources_1/bd/semicap/ip/semicap_semicap_engine_0_0_1/semicap_engine.srcs/sources_1/ip/fifo_mon_stat/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_mon_stat' generated file not found 'e:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap/semicap.srcs/sources_1/bd/semicap/ip/semicap_semicap_engine_0_0_1/semicap_engine.srcs/sources_1/ip/fifo_mon_stat/simulation/fifo_generator_vlog_beh.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_mon_stat' generated file not found 'e:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap/semicap.srcs/sources_1/bd/semicap/ip/semicap_semicap_engine_0_0_1/semicap_engine.srcs/sources_1/ip/fifo_mon_stat/hdl/fifo_generator_v13_2_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_mon_stat' generated file not found 'e:/Projekty/HIPERO/delivery/delivery/Software/SW1 - FPGA IP-cores used in HIPERO DM/CBK IP-cores/ip_projects/semicap/semicap.srcs/sources_1/bd/semicap/ip/semicap_semicap_engine_0_0_1/semicap_engine.srcs/sources_1/ip/fifo_mon_stat/hdl/fifo_generator_v13_2_rfs.v'. Please regenerate to continue.
+WARNING: [BD 41-1663] The design 'semicap.bd' cannot be modified due to following reason(s):
+* Project is read-only. Please run 'save_project_as' before making any change to the bd-design. 
+
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'semicap.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+semicap_hipero_sem_0
+semicap_axi_hwicap_0
+semicap_hipero_icap_0_0
+semicap_semicap_spihelper_0_0
+semicap_semicap_axi_0_0
+semicap_semicap_engine_0_0
+
+WARNING: [Project 1-229] Project 'semicap.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1080.660 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 15 14:36:42 2021...

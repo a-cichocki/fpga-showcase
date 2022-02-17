@@ -1,0 +1,1654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>cbkpan</spirit:vendor>
+  <spirit:library>hipero</spirit:library>
+  <spirit:name>semicap_engine</spirit:name>
+  <spirit:version>2.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>s00_axi</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:slave>
+        <spirit:memoryMapRef spirit:memoryMapRef="s00_axi"/>
+      </spirit:slave>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awaddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_araddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>s00_axi_aresetn</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_ARESETN.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>icap_clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>icap_clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>s00_axi_aclk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_ACLK.ASSOCIATED_BUSIF">s00_axi</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_ACLK.ASSOCIATED_RESET">s00_axi_aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:memoryMaps>
+    <spirit:memoryMap>
+      <spirit:name>s00_axi</spirit:name>
+      <spirit:addressBlock>
+        <spirit:name>reg0</spirit:name>
+        <spirit:baseAddress spirit:format="bitString" spirit:resolve="user" spirit:bitStringLength="32">0</spirit:baseAddress>
+        <spirit:range spirit:format="long" spirit:resolve="dependent" spirit:dependency="pow(2,(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1) + 1)" spirit:minimum="4096" spirit:rangeType="long">4096</spirit:range>
+        <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1) + 1">32</spirit:width>
+        <spirit:usage>register</spirit:usage>
+      </spirit:addressBlock>
+    </spirit:memoryMap>
+  </spirit:memoryMaps>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>semicap_engine</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>db7567ae</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>semicap_engine</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>db7567ae</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>dfc3df4a</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>hw_icap_avail</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hw_icap_csib</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hw_icap_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hw_icap_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hw_icap_rdwr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hw_cap_gnt</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hw_cap_rel</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hw_cap_req</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hw_eos_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hw_ip2intc_irpt</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_icap_prerror</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_icap_prdone</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_icap_avail</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_icap_csib</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_icap_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_icap_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_icap_rdwr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_cap_gnt</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_cap_rel</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_cap_req</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_monitor_txfull</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_monitor_rxdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_monitor_rxempty</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_monitor_txdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_monitor_txwrite</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_monitor_rxread</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_command_strobe</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_command_code</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">39</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_command_busy</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_status_heartbeat</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_status_initialization</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_status_observation</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_status_correction</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_status_classification</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_status_injection</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_status_essential</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_status_uncorrectable</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_status_diagnostic_scan</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_status_detect_only</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_aux_error_cr_ne</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_aux_error_cr_es</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sem_aux_error_uc</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>icap_csib</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>icap_rdwrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>icap_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>icap_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>icap_prerror</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>icap_prdone</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>icap_avail</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>icap_clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>extirq</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awaddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">1</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_araddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C S00 Axi Data Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C S00 Axi Addr Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH">6</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>semicap_engine_S00_AXI.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>hipero</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>semicap_engine.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_ec30d46c</spirit:userFileType>
+        <spirit:logicalName>hipero</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>semicap_engine_S00_AXI.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+        <spirit:logicalName>hipero</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>semicap_engine.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+        <spirit:logicalName>hipero</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/semicap_engine_v2_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_dfc3df4a</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>Hipero SEMICAP Control Unit</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+      <spirit:displayName>C S00 Axi Data Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>C S00 Axi Addr Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_ADDR_WIDTH">6</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">semicap_engine_v2_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">virtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qvirtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aspartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexu</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplusHBM</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexu</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/AXI_Infrastructure</xilinx:taxonomy>
+        <xilinx:taxonomy>/FPGA_Features_and_Design/Soft_Error_Mitigation</xilinx:taxonomy>
+        <xilinx:taxonomy>/Partial_Reconfiguration</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>SEMICAP Engine</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:vendorDisplayName>CBK PAN</xilinx:vendorDisplayName>
+      <xilinx:vendorURL>http://www.cbk.waw.pl</xilinx:vendorURL>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-05-09T22:33:29Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cb386c6_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37d41b32_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fea567e_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74e26b39_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5113198f_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22011cf5_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76936bac_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c18d014_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a0f268a_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7228f2ff_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@725c253b_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aeb903b_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7490029e_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ffc2788_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46c76aaa_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fc535ba_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@749979fe_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@702a2cd8_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@210e37ed_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b6b155f_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1467e1bd_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2455fe77_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e1216f_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b47d83b_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b2fcd2_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60b460b2_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4116ec5b_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11817236_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@92566ba_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59549173_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7196739e_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@354e4845_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4224eb44_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22f27701_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ed6ad6f_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c066dfe_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a5c8754_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50292adc_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@296019a5_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d8af506_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31900233_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cc96c72_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5382b725_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@520efa58_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f5be108_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@699db71b_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66983fbe_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bf8c6f6_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@256e48ee_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f506f86_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6704b9f4_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7afe40f0_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cc96325_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bdde3f2_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@219ac636_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69123a3d_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11d4a822_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1072d2fe_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21698394_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d320e52_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d4f1beb_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f1bade7_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@681c291b_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b9b2173_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fedc7d7_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78d18fe5_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58a70536_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d34fe8_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bb8c3c3_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b23bab1_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3aeb0632_ARCHIVE_LOCATION"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a6307c3_ARCHIVE_LOCATION"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c814e83_ARCHIVE_LOCATION"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1aa9a75f_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26a7f151_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33a11407_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56bde48a_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@278c0de7_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c6dc2f3_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76c85ea8_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e1caa65_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fde2b8b_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cdc76c3_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@612ead3a_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41e8fa0f_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20c8fc25_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9888422_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52768174_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57ff87c6_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cadd354_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61ff00b2_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@436c6587_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12452c3b_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@139ba274_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ffbc109_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@674251d8_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49a2ccff_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7640c7bb_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e22be4a_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../.</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ddf58d_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31d2d3db_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@236024ab_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74fbb3ac_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1aa98e12_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@722889ee_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../..</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@385afdc4_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../i</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27141323_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../i</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49ec7078_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../i</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ba77a0d_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6268b4c2_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31fc907a_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49f52d72_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b7b50cd_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46e84d06_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76b684e1_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67619f09_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@83fd758_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_r</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bbbdbb6_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_r</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f5e738b_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_r</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3269b9ca_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_re</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@793207c8_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_re</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5010d5a2_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_re</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5191d7e3_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_rep</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7309e66b_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ba2316c_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75217d4a_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25cd037c_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d2ce142_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55fc016d_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25fa3d57_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cbcd86_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45b86c2a_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/s</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@495bbc4d_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/s</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ecac3bf_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/s</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@535b84f9_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/se</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a9deb00_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/se</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55e4aeab_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/se</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14f88d1_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/sem</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16891759_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semi</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77475656_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semi</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b774e70_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semi</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@469adcdd_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semi</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7767ce3f_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semi</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ac45170_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semic</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@756d8fa8_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semic</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7deeee5_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semic</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d378f05_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semica</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f67e31d_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semica</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22fe8ec2_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semica</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36fc1b_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4055d757_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bf10ddc_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16450404_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36b16fff_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79232af2_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a703c3f_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e81085d_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76ea8705_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_e</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3937bf49_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_e</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54b2b3f_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_e</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e2ab651_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_en</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ea7992_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_en</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44d93d39_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_en</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2caf7eea_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_eng</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f80f4c9_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_eng</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e3b8a3_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_eng</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5db736de_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_engi</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77c06179_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_engi</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a5ce8ba_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_engi</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49013a0e_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_engin</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f8af82_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_engin</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ce37fc9_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_engin</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40b95ced_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_engine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cf2020d_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_engine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b382f77_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/../../ip_repo/semicap_engine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ba60609_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@147294ce_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34d5f270_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49923c07_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4adfd1d0_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69c7acf6_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@278063f9_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c8343a_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d8b6e55_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37b8288f_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@132ada41_ARCHIVE_LOCATION">d:/projects/hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b1a9439_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_repo/semicap_engine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e71788f_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_repo/semicap_engine</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@696b30d9_ARCHIVE_LOCATION">D:/Projects/Hipero/svn/dev/fpga/ip_repo/semicap_engine</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a48f9a21"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="871c369d"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a3e10cc4"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="78f64a3d"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="e9c11669"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="aa73763f"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Mon Jul 29 13:51:03 2019
+# Process ID: 35952
+# Current directory: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap/semicap.runs/synth_1
+# Command line: vivado.exe -log semicap_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source semicap_wrapper.tcl
+# Log file: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap/semicap.runs/synth_1/semicap_wrapper.vds
+# Journal file: D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap/semicap.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source semicap_wrapper.tcl -notrace

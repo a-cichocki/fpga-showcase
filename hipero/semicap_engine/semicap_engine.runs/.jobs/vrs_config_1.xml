@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="fifo_mon_cmd_synth_1" LaunchDir="D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.runs/fifo_mon_cmd_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_mon_stat_synth_1" LaunchDir="D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.runs/fifo_mon_stat_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="fifo_mon_cmd_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="D:/Projects/Hipero/svn/dev/fpga/ip_projects/semicap_engine/semicap_engine.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fifo_mon_cmd_synth_1"/>
+		<Parent Id="fifo_mon_stat_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

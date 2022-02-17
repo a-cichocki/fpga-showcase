@@ -1,0 +1,94 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1.1 (win64) Build 2580384 Sat Jun 29 08:12:21 MDT 2019
+| Date         : Mon Jul 29 13:49:00 2019
+| Host         : dt-205 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'semicap_semicap_engine_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of semicap_semicap_engine_0_0 (cbkpan:hipero:semicap_engine:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1.1 (win64) Build 2580384 Sat Jun 29 08:12:21 MDT 2019
+| Date         : Sat Jul 27 20:05:08 2019
+| Host         : dt-205 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'semicap_semicap_engine_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of semicap_semicap_engine_0_0 (cbkpan:hipero:semicap_engine:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1.1 (win64) Build 2580384 Sat Jun 29 08:12:21 MDT 2019
+| Date         : Sat Jul 27 13:40:30 2019
+| Host         : dt-205 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'semicap_semicap_engine_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of semicap_semicap_engine_0_0 (cbkpan:hipero:semicap_engine:1.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1.1 (win64) Build 2580384 Sat Jun 29 08:12:21 MDT 2019
+| Date         : Sat Jul 27 08:31:26 2019
+| Host         : dt-205 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'semicap_semicap_engine_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of semicap_semicap_engine_0_0 (cbkpan:hipero:semicap_engine:1.0) from (Rev. 3) to (Rev. 4)
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'semicap_semicap_engine_0_0'.
+
+
+-Upgrade has added interface 'iClk' (xilinx.com:signal:clock:1.0)
+
+-Upgrade has added interface 'iRst_n' (xilinx.com:signal:reset:1.0)
+
+-Upgrade has added interface 'oIRq' (xilinx.com:signal:interrupt:1.0)
+
+-Upgrade has added interface 'oRpReset_n' (xilinx.com:signal:reset:1.0)
+
+
