@@ -1,0 +1,58 @@
+vhdl xil_defaultlib  \
+"../../../bd/navisp/ip/navisp_rst_ps7_0_100M_0/sim/navisp_rst_ps7_0_100M_0.vhd" \
+"../../../bd/navisp/ip/navisp_axi_bram_ctrl_0_0/sim/navisp_axi_bram_ctrl_0_0.vhd" \
+"../../../bd/navisp/ip/navisp_axi_apb_bridge_0_0/sim/navisp_axi_apb_bridge_0_0.vhd" \
+"../../../bd/navisp/ip/navisp_ahblite_axi_bridge_1_0/sim/navisp_ahblite_axi_bridge_1_0.vhd" \
+"../../../bd/navisp/ip/navisp_axi_gpio_0_1/sim/navisp_axi_gpio_0_1.vhd" \
+
+vhdl grlib  \
+"../../../bd/navisp/ipshared/e213/sources_1/imports/stdlib/config_types.vhd" \
+"../../../bd/navisp/ipshared/e213/sources_1/imports/stdlib/config.vhd" \
+"../../../bd/navisp/ipshared/e213/sources_1/imports/stdlib/version.vhd" \
+"../../../bd/navisp/ipshared/e213/sources_1/imports/stdlib/stdlib.vhd" \
+"../../../bd/navisp/ipshared/e213/sources_1/imports/grlib/amba/amba.vhd" \
+
+vhdl cbk  \
+"../../../bd/navisp/ipshared/e213/sources_1/imports/General_pkg/General_pkg.vhd" \
+"../../../bd/navisp/ipshared/e213/sources_1/imports/EepromCtrls_pkg/FtNandCtrl_pkg.vhd" \
+"../../../bd/navisp/ipshared/e213/sources_1/imports/EepromCtrls_pkg/FtNandCtrl.vhd" \
+"../../../bd/navisp/ipshared/e213/sources_1/imports/EepromCtrls_pkg/FtNandCtrl_flashio.vhd" \
+
+vhdl grlib  \
+"../../../bd/navisp/ipshared/e213/sources_1/imports/grlib/amba/devices.vhd" \
+"../../../bd/navisp/ipshared/e213/sources_1/imports/amba/ahbmst.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/navisp/ipshared/e213/sources_1/imports/new/FtNandCtrlWrap.vhd" \
+"../../../bd/navisp/ip/navisp_FtNandCtrlWrap_0_1/sim/navisp_FtNandCtrlWrap_0_1.vhd" \
+"../../../bd/navisp/ip/navisp_ahblite_axi_bridge_0_1/sim/navisp_ahblite_axi_bridge_0_1.vhd" \
+"../../../bd/navisp/ip/navisp_ila_0_0/sim/navisp_ila_0_0.vhd" \
+"../../../bd/navisp/ip/navisp_ila_0_1/sim/navisp_ila_0_1.vhd" \
+"../../../bd/navisp/ip/navisp_system_ila_0_0/bd_0/sim/bd_1828.vhd" \
+"../../../bd/navisp/ip/navisp_system_ila_0_0/bd_0/ip/ip_0/sim/bd_1828_ila_lib_0.vhd" \
+"../../../bd/navisp/ip/navisp_system_ila_0_0/sim/navisp_system_ila_0_0.vhd" \
+
+vhdl cbk  \
+"../../../bd/navisp/ipshared/5901/sources_1/imports/Navisp_pkg/MaxAcq.vhd" \
+"../../../bd/navisp/ipshared/5901/sources_1/imports/new/MaxAcqWrap.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/navisp/ip/navisp_MaxAcqWrap_0_1/sim/navisp_MaxAcqWrap_0_1.vhd" \
+"../../../bd/navisp/ip/navisp_axi_uart16550_0_0/sim/navisp_axi_uart16550_0_0.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/navisp_xadc_wiz_0_0_conv_funs_pkg.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/navisp_xadc_wiz_0_0_proc_common_pkg.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/navisp_xadc_wiz_0_0_ipif_pkg.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/navisp_xadc_wiz_0_0_family_support.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/navisp_xadc_wiz_0_0_family.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/navisp_xadc_wiz_0_0_soft_reset.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/navisp_xadc_wiz_0_0_pselect_f.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/navisp_xadc_wiz_0_0_address_decoder.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/navisp_xadc_wiz_0_0_slave_attachment.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/interrupt_control_v2_01_a/hdl/src/vhdl/navisp_xadc_wiz_0_0_interrupt_control.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/navisp_xadc_wiz_0_0_axi_lite_ipif.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/navisp_xadc_wiz_0_0_xadc_core_drp.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/navisp_xadc_wiz_0_0_axi_xadc.vhd" \
+"../../../bd/navisp/ip/navisp_xadc_wiz_0_0/navisp_xadc_wiz_0_0.vhd" \
+"../../../bd/navisp/sim/navisp.vhd" \
+
+nosort
